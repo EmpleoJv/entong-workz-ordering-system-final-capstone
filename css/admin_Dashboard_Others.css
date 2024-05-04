@@ -1,0 +1,301 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&display=swap");
+
+/* all about side nav */
+.sideNav {
+  background-color: #102336;
+  height: 100%;
+  width: 15vw;
+  position: fixed;
+  overflow-x: hidden;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+.sideNav h1 {
+  padding-top: 2vw;
+  color: whitesmoke;
+  font-family: "Anton", sans-serif;
+  text-align: center;
+  font-size: 2vw;
+}
+.sideNav a div img {
+  width: 2vw;
+}
+
+.sideNav a div span {
+  color: whitesmoke;
+  font-weight: bold;
+  font-size: 1vw;
+}
+.profile {
+  text-align: center;
+  padding-bottom: 1vw;
+}
+.profile a img {
+  width: 4vw;
+  border-radius: 50%;
+}
+.profile p {
+  color: whitesmoke;
+  font-weight: bold;
+  font-size: 1vw;
+}
+.sideNav a {
+  text-decoration: none;
+}
+.list div {
+  padding-left: 2.5vw;
+}
+.list div:hover {
+  background-color: #16324e;
+}
+@media (max-width: 920px) {
+  .sideNav a div img {
+    width: 9vw;
+  }
+  .sideNav a div span {
+    display: none;
+  }
+  .profile a img {
+    width: 12vw;
+  }
+  .profile p {
+    font-size: 3vw;
+  }
+  .sideNav h1 {
+    font-size: 4vw;
+  }
+}
+/* all bout main nav */
+.mainContent {
+  margin-left: 15vw;
+  background-color: #16324e;
+  transition: 0.5s;
+  height: 2vw;
+}
+.mainContent nav {
+  display: flex;
+  justify-content: space-between;
+}
+.mainContent nav img {
+  width: 2vw;
+  height: 2vw;
+}
+.mainContent nav h1 {
+  font-size: 1.7vw;
+  color: whitesmoke;
+  font-family: "Anton", sans-serif;
+}
+
+.mainContent nav .logout {
+  font-size: 1.2vw;
+  padding-right: 1vw;
+  color: whitesmoke;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: bold;
+}
+
+@media (max-width: 920px) {
+  .mainContent {
+    height: 7vw;
+  }
+
+  .mainContent nav img {
+    width: 7vw;
+    height: 7vw;
+  }
+  .mainContent nav h1 {
+    font-size: 6vw;
+  }
+
+  .mainContent nav .logout {
+    font-size: 4vw;
+    padding-right: 1vw;
+  }
+}
+.main_Con {
+  display: block;
+  justify-content: center;
+  margin-bottom: 10vw;
+}
+#imageName {
+  font-size: 1vw;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 10vw;
+  display: inline-block;
+}
+#commondNum {
+  width: 45px;
+}
+#number {
+  width: 110px;
+}
+.submit_Payment {
+  background-color: #16324e;
+  color: whitesmoke;
+  padding: 1vw 3vw;
+  border-radius: 10px;
+}
+.gcash_Info {
+  display: flex;
+  justify-content: space-evenly;
+}
+.gcash_Table {
+  max-height: 500px; /* Set a fixed height for the table container */
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+
+#ordersTable {
+  width: 100%; /* Make the table take 100% width of its container */
+  border-collapse: collapse; /* Collapse borders for a cleaner look */
+}
+#ordersTable th,
+#ordersTable td {
+  border: 1px solid #ddd; /* Add borders to table cells */
+  padding: 8px; /* Add padding to table cells */
+  text-align: center; /* Align text to the left in table cells */
+}
+
+#ordersTable th {
+  background-color: #102336;
+  color: whitesmoke;
+}
+.even-row td img {
+  width: auto;
+  height: 20vw;
+}
+.even-row {
+  background-color: #f9f9f9; /* Add a background color to even rows */
+}
+.form_container form {
+  text-align: center;
+  margin-bottom: 1vw;
+}
+.form_container form h1 {
+  font-family: "Anton", sans-serif;
+  font-size: 1.5vw;
+}
+.form_container form label {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: bold;
+  font-size: 1.5vw;
+}
+.form_container form input,
+select {
+  width: 100%;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 10px;
+}
+.form_container form input[type="text"],
+input[type="number"],
+select {
+  border: 2px solid black;
+}
+.form_container form input[type="submit"] {
+  background-color: #102336;
+  color: whitesmoke;
+}
+hr {
+  border: 2px solid #102336;
+}
+@media (max-width: 920px) {
+  .gcash_Info {
+    display: block;
+    margin: 0vw 5vw;
+  }
+  .form_container form {
+    text-align: center;
+    margin-bottom: 1vw;
+  }
+  .form_container form h1 {
+    font-family: "Anton", sans-serif;
+    font-size: 5vw;
+  }
+  .form_container form label {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: bold;
+    font-size: 5vw;
+  }
+  .form_container form input,
+  select {
+    width: 100%;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  .form_container form input[type="text"],
+  input[type="number"],
+  select {
+    border: 2px solid black;
+  }
+  .form_container form input[type="submit"] {
+    background-color: #102336;
+    color: whitesmoke;
+  }
+}
+.discount_Con {
+  display: flex;
+  justify-content: space-evenly;
+}
+#displayDiscountValue {
+  width: 3vw;
+}
+.vouchers {
+  max-height: 200px; /* Set a fixed height for the table container */
+  overflow-y: auto;
+}
+.form_container2 {
+  text-align: center;
+}
+.form_container2 form input[type="submit"] {
+  background-color: #102336;
+  color: whitesmoke;
+  width: 100%;
+}
+.form_container2 input {
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 10px;
+}
+.form_container2 label {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: bold;
+  font-size: 1.5vw;
+}
+@media (max-width: 920px) {
+  .discount_Con {
+    display: block;
+    margin: 0vw 5vw;
+  }
+  .form_container2 {
+    text-align: center;
+  }
+  .form_container2 form input[type="submit"] {
+    background-color: #102336;
+    color: whitesmoke;
+    width: 100%;
+  }
+  .form_container2 input {
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  .form_container2 label {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: bold;
+    font-size: 5vw;
+  }
+  .submit_Discount {
+    margin: 2vw 0vw;
+  }
+  .brake {
+    display: none;
+  }
+}

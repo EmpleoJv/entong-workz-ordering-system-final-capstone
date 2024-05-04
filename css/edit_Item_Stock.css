@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&display=swap");
+
+/* all about side nav */
+.sideNav {
+  background-color: #102336;
+  height: 100%;
+  width: 15vw;
+  position: fixed;
+  overflow-x: hidden;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+.sideNav h1 {
+  padding-top: 2vw;
+  color: whitesmoke;
+  font-family: "Anton", sans-serif;
+  text-align: center;
+  font-size: 2vw;
+}
+.sideNav a div img {
+  width: 2vw;
+}
+
+.sideNav a div span {
+  color: whitesmoke;
+  font-weight: bold;
+  font-size: 1vw;
+}
+.profile {
+  text-align: center;
+  padding-bottom: 1vw;
+}
+.profile a img {
+  width: 4vw;
+  border-radius: 50%;
+}
+.profile p {
+  color: whitesmoke;
+  font-weight: bold;
+  font-size: 1vw;
+}
+.sideNav a {
+  text-decoration: none;
+}
+.list div {
+  padding-left: 2.5vw;
+}
+.list div:hover {
+  background-color: #16324e;
+}
+@media (max-width: 920px) {
+  .sideNav a div img {
+    width: 9vw;
+  }
+  .sideNav a div span {
+    display: none;
+  }
+  .profile a img {
+    width: 12vw;
+  }
+  .profile p {
+    font-size: 3vw;
+  }
+  .sideNav h1 {
+    font-size: 4vw;
+  }
+}
+/* all bout main nav */
+.mainContent {
+  margin-left: 15vw;
+  background-color: #16324e;
+  transition: 0.5s;
+  height: 2vw;
+}
+.mainContent nav {
+  display: flex;
+  justify-content: space-between;
+}
+.mainContent nav img {
+  width: 2vw;
+  height: 2vw;
+}
+.mainContent nav h1 {
+  font-size: 1.7vw;
+  color: whitesmoke;
+  font-family: "Anton", sans-serif;
+}
+
+.mainContent nav .logout {
+  font-size: 1.2vw;
+  padding-right: 1vw;
+  color: whitesmoke;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: bold;
+}
+
+@media (max-width: 920px) {
+  .mainContent {
+    height: 7vw;
+  }
+
+  .mainContent nav img {
+    width: 7vw;
+    height: 7vw;
+  }
+  .mainContent nav h1 {
+    font-size: 6vw;
+  }
+
+  .mainContent nav .logout {
+    font-size: 4vw;
+    padding-right: 1vw;
+  }
+}
+/* all about the info of the item */
+.img_Container {
+  text-align: center;
+}
+.img_Container img {
+  border-radius: 20%;
+  height: 15vw;
+  width: 15vw;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.container > * {
+  flex: 1 1 160px;
+}
+.card {
+  margin: 0.1vw;
+  border: 2px solid #102336;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  padding: 1vw 0.5vw;
+  box-sizing: border-box;
+}
+.card div h5 {
+  font-family: "Anton", sans-serif;
+  font-size: 1vw;
+  text-align: center;
+}
+.card div h6 {
+  font-size: 0.8vw;
+}
+.card div hr {
+  border: 1px solid #16324e;
+}
+@media (max-width: 920px) {
+  .card {
+    margin: 0.5vw;
+  }
+  .card div h5 {
+    font-size: 3.5vw;
+  }
+  .card div h6 {
+    font-size: 3vw;
+  }
+}
+/* all about the container */
+.form_Container {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 5vw 0vw;
+}
+.form_Container form {
+  text-align: left;
+}
+.form_Update_Item_Container h4 {
+  font-family: "Anton", sans-serif;
+  font-size: 1.5vw;
+}
+.reset_item_Container {
+  padding-top: 0vw;
+}
+.reset_item_Container h4 {
+  font-family: "Anton", sans-serif;
+  font-size: 1.5vw;
+}
+
+@media (max-width: 920px) {
+  .form_Container {
+    display: block;
+  }
+  .form_Container form {
+    text-align: center;
+  }
+  .form_Update_Item_Container h4 {
+    font-size: 5vw;
+  }
+  .reset_item_Container h4 {
+    font-size: 5vw;
+  }
+  .reset_item_Container {
+    padding-top: 5vw;
+  }
+}
+.sumbitToUpdateItemQuantity {
+  background-color: #16324e;
+  color: whitesmoke;
+  font-weight: bold;
+}

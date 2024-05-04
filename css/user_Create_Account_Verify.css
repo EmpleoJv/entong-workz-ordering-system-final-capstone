@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&display=swap");
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image: url("../img/backgroundImages/back2.png");
+}
+.main_Container {
+  flex: 1;
+  margin: auto;
+}
+.back_main_Login button {
+  font-family: "Anton", sans-serif;
+  background-color: #16324e;
+  color: whitesmoke;
+  margin: 1vw;
+  border-radius: 0.5vw;
+  font-size: 1vw;
+  padding: 0.5vw 2vw;
+  letter-spacing: 2px; /* Add 2 pixels of space between characters */
+}
+.form_Container {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  text-align: center;
+  padding: 5vw 5vw;
+  border-radius: 1vw;
+  backdrop-filter: blur(10px); /* Apply a blur effect of 10px */
+}
+.form_Container h3 {
+  font-family: "Anton", sans-serif;
+  color: #16324e;
+  font-size: 2vw;
+}
+.input_Container {
+  border: 2px solid #16324e;
+  padding: 1vw 2vw;
+  border-radius: 1vw;
+  /* CSS code to center the content vertically using grid */
+  display: flex;
+  justify-content: center;
+}
+.input_Container img {
+  height: 2vw;
+  width: 2vw;
+}
+.admin_Input_Text {
+  border: none;
+  outline: none;
+  font-size: 1vw;
+  background-color: transparent;
+  width: 20vw;
+  font-weight: bold;
+}
+.admin_Input_Text:focus {
+  border: none;
+  outline: none;
+}
+.inputButton {
+  font-family: "Anton", sans-serif;
+  background-color: #16324e;
+  color: whitesmoke;
+  border-radius: 0.5vw;
+  font-size: 1vw;
+  padding: 0.5vw 2vw;
+  letter-spacing: 2px; /* Add 2 pixels of space between characters */
+}
+.msgerror {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: bold;
+  font-size: 2vw;
+  color: red;
+}
+
+footer {
+  background-color: #16324e;
+  color: #fff; /* Set your desired text color for the footer */
+  text-align: center;
+  padding: 10px 0;
+}
+.footLinkLocation {
+  vertical-align: middle;
+}
+.footLinkLocation ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+.footLinkLocation ul li a {
+  color: whitesmoke;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1vw;
+  font-weight: bold;
+}
+.footLinkLocation img {
+  width: 3vw;
+  height: 3vw;
+}
+@media (max-width: 920px) {
+  body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url("../img/backgroundImages/back2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .back_main_Login button {
+    font-family: "Anton", sans-serif;
+    background-color: #16324e;
+    color: whitesmoke;
+    margin: 1vw;
+    border-radius: 3vw;
+    font-size: 5vw;
+    padding: 2.5vw 6vw;
+    letter-spacing: 2px; /* Add 2 pixels of space between characters */
+  }
+  .form_Container {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    text-align: center;
+    padding: 5vw 5vw;
+    border-radius: 3vw;
+    backdrop-filter: blur(10px); /* Apply a blur effect of 10px */
+    margin-top: 15vw;
+  }
+  .form_Container h3 {
+    font-family: "Anton", sans-serif;
+    color: #16324e;
+    font-size: 7vw;
+  }
+
+  .input_Container {
+    border: 2px solid #16324e;
+    padding: 1vw 2vw;
+    border-radius: 3vw;
+    /* CSS code to center the content vertically using grid */
+    display: flex;
+    justify-content: center;
+  }
+  .input_Container img {
+    height: 7vw;
+    width: 7vw;
+  }
+  .admin_Input_Text {
+    border: none;
+    outline: none;
+    font-size: 4vw;
+    background-color: transparent;
+    width: 60vw;
+    font-weight: bold;
+  }
+  .inputButton {
+    font-family: "Anton", sans-serif;
+    background-color: #16324e;
+    color: whitesmoke;
+    border-radius: 2vw;
+    font-size: 5vw;
+    padding: 2.5vw 7vw;
+    letter-spacing: 2px; /* Add 2 pixels of space between characters */
+  }
+  .msgerror {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: bold;
+    font-size: 6vw;
+    color: red;
+  }
+
+  footer {
+    background-color: #16324e;
+    color: #fff; /* Set your desired text color for the footer */
+    text-align: center;
+    padding: 10px 0;
+    margin-left: -10vw;
+  }
+  .footLinkLocation {
+    vertical-align: middle;
+  }
+  .footLinkLocation ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .footLinkLocation ul li a {
+    color: whitesmoke;
+    text-decoration: none;
+    text-transform: none;
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 5vw;
+    font-weight: bold;
+  }
+  .footLinkLocation img {
+    width: 10vw;
+    height: auto;
+  }
+}

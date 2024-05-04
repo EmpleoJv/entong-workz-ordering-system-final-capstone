@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&display=swap");
+
+/* all about side nav */
+.sideNav {
+  background-color: #102336;
+  height: 100%;
+  width: 15vw;
+  position: fixed;
+  overflow-x: hidden;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+.sideNav h1 {
+  padding-top: 2vw;
+  color: whitesmoke;
+  font-family: "Anton", sans-serif;
+  text-align: center;
+  font-size: 2vw;
+}
+.sideNav a div img {
+  width: 2vw;
+}
+
+.sideNav a div span {
+  color: whitesmoke;
+  font-weight: bold;
+  font-size: 1vw;
+}
+.profile {
+  text-align: center;
+  padding-bottom: 1vw;
+}
+.profile a img {
+  width: 4vw;
+  border-radius: 50%;
+}
+.profile p {
+  color: whitesmoke;
+  font-weight: bold;
+  font-size: 1vw;
+}
+.sideNav a {
+  text-decoration: none;
+}
+.list div {
+  padding-left: 2.5vw;
+}
+.list div:hover {
+  background-color: #16324e;
+}
+@media (max-width: 920px) {
+  .sideNav a div img {
+    width: 9vw;
+  }
+  .sideNav a div span {
+    display: none;
+  }
+  .profile a img {
+    width: 12vw;
+  }
+  .profile p {
+    font-size: 3vw;
+  }
+  .sideNav h1 {
+    font-size: 4vw;
+  }
+}
+/* all bout main nav */
+.mainContent {
+  margin-left: 15vw;
+  background-color: #16324e;
+  transition: 0.5s;
+  height: 2vw;
+}
+.mainContent nav {
+  display: flex;
+  justify-content: space-between;
+}
+.mainContent nav img {
+  width: 2vw;
+  height: 2vw;
+}
+.mainContent nav h1 {
+  font-size: 1.7vw;
+  color: whitesmoke;
+  font-family: "Anton", sans-serif;
+}
+
+.mainContent nav .logout {
+  font-size: 1.2vw;
+  padding-right: 1vw;
+  color: whitesmoke;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: bold;
+}
+
+@media (max-width: 920px) {
+  .mainContent {
+    height: 7vw;
+  }
+
+  .mainContent nav img {
+    width: 7vw;
+    height: 7vw;
+  }
+  .mainContent nav h1 {
+    font-size: 6vw;
+  }
+
+  .mainContent nav .logout {
+    font-size: 4vw;
+    padding-right: 1vw;
+  }
+}
+
+.chatbox_panel {
+  margin: 0vw 5vw 0vw 5vw;
+  border-radius: 15px;
+}
+.chatBox {
+  max-height: 700px; /* Set the maximum height to control the scrollable area */
+  overflow-y: auto; /* Enable vertical scrolling when content exceeds the height */
+  box-shadow: #16324e 0px 30px 60px -12px inset,
+    #16324e 0px 18px 36px -18px inset;
+  border-top-left-radius: 5vw;
+}
+#myForm {
+  text-align: center;
+}
+#myForm input {
+  width: 80%;
+  padding: 10px;
+}
+#myForm button {
+  width: 10vw;
+  padding: 10px;
+  background-color: #16324e;
+  color: whitesmoke;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: bold;
+}
+@media (max-width: 920px) {
+  #myForm {
+    text-align: center;
+  }
+  #myForm input {
+    width: 70%;
+    padding: 10px;
+  }
+  #myForm button {
+    width: 15vw;
+    padding: 10px;
+    background-color: #16324e;
+    color: whitesmoke;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: bold;
+  }
+}
+.div_User_Message {
+  display: flex;
+  justify-content: flex-start;
+  margin-right: 50vw;
+}
+.user_Message {
+  text-align: left;
+  margin-left: 2vw;
+  background-color: #28282b;
+  color: whitesmoke;
+  padding: 5px;
+  border-radius: 10px;
+}
+.div_company_Message {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 50vw;
+}
+.company_Message {
+  text-align: left;
+  margin-right: 2vw;
+  background-color: #16324e;
+  color: whitesmoke;
+  padding: 5px;
+  border-radius: 10px;
+}

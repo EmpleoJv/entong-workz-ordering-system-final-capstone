@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&display=swap");
+
+/* all about side nav */
+.sideNav {
+  background-color: #102336;
+  height: 100%;
+  width: 15vw;
+  position: fixed;
+  overflow-x: hidden;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+.sideNav h1 {
+  padding-top: 2vw;
+  color: whitesmoke;
+  font-family: "Anton", sans-serif;
+  text-align: center;
+  font-size: 2vw;
+}
+.sideNav a div img {
+  width: 2vw;
+}
+
+.sideNav a div span {
+  color: whitesmoke;
+  font-weight: bold;
+  font-size: 1vw;
+}
+.profile {
+  text-align: center;
+  padding-bottom: 1vw;
+}
+.profile a img {
+  width: 4vw;
+  border-radius: 50%;
+}
+.profile p {
+  color: whitesmoke;
+  font-weight: bold;
+  font-size: 1vw;
+}
+.sideNav a {
+  text-decoration: none;
+}
+.list div {
+  padding-left: 2.5vw;
+}
+.list div:hover {
+  background-color: #16324e;
+}
+@media (max-width: 920px) {
+  .sideNav a div img {
+    width: 9vw;
+  }
+  .sideNav a div span {
+    display: none;
+  }
+  .profile a img {
+    width: 12vw;
+  }
+  .profile p {
+    font-size: 3vw;
+  }
+  .sideNav h1 {
+    font-size: 4vw;
+  }
+}
+/* all bout main nav */
+.mainContent {
+  margin-left: 15vw;
+  background-color: #16324e;
+  transition: 0.5s;
+  height: 2vw;
+}
+.mainContent nav {
+  display: flex;
+  justify-content: space-between;
+}
+.mainContent nav img {
+  width: 2vw;
+  height: 2vw;
+}
+.mainContent nav h1 {
+  font-size: 1.7vw;
+  color: whitesmoke;
+  font-family: "Anton", sans-serif;
+}
+
+.mainContent nav .logout {
+  font-size: 1.2vw;
+  padding-right: 1vw;
+  color: whitesmoke;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: bold;
+}
+
+.search_Container form input {
+  float: right;
+}
+.search_Container form #search {
+  float: right;
+  margin-left: 1vw;
+}
+.search_Container form #btnSearch {
+  float: right;
+  background-color: #16324e;
+  color: whitesmoke;
+}
+@media (max-width: 920px) {
+  .mainContent {
+    height: 7vw;
+  }
+
+  .mainContent nav img {
+    width: 7vw;
+    height: 7vw;
+  }
+  .mainContent nav h1 {
+    font-size: 6vw;
+  }
+
+  .mainContent nav .logout {
+    font-size: 4vw;
+    padding-right: 1vw;
+  }
+}
+.card_Content {
+  display: flex;
+  flex-wrap: wrap;
+}
+.card {
+  margin: 10px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  padding: 1vw;
+  border-radius: 1vw;
+  height: auto;
+  width: 17.2vw;
+}
+.card .insideContent {
+  display: flex;
+  justify-content: space-between;
+}
+.card .insideContent a {
+  text-decoration: none;
+}
+.card .insideContent .edit {
+  background-color: #ff6255;
+  border-radius: 0.5vw;
+  color: whitesmoke;
+  padding: 0vw 1vw;
+  font-size: 0.8vw;
+}
+.card .insideContent .deactivate {
+  background-color: #3cb8f7;
+  border-radius: 0.5vw;
+  color: whitesmoke;
+  padding: 0vw 1vw;
+  font-size: 0.8vw;
+}
+.card .moreOptions {
+  display: flex;
+  justify-content: space-between;
+}
+.card .moreOptions .addStock {
+  background-color: #59c24c;
+  border-radius: 0.5vw;
+  color: whitesmoke;
+  padding: 0vw 1vw;
+  font-size: 0.8vw;
+}
+.card .moreOptions .addImage {
+  background-color: #595956;
+  border-radius: 0.5vw;
+  color: whitesmoke;
+  padding: 0vw 1vw;
+  font-size: 0.8vw;
+}
+.card .image img {
+  width: 15vw;
+  height: 15vw;
+  border-radius: 1vw;
+}
+.price {
+  color: red;
+  font-size: 1vw;
+}
+.name {
+  font-size: 1vw;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.card .image {
+  left: 50%;
+  margin: auto;
+}
+@media (max-width: 920px) {
+  .card {
+    width: 100%;
+  }
+  .price {
+    font-size: 2vw;
+  }
+  .name {
+    font-size: 3vw;
+    overflow: hidden;
+  }
+  .card .image img {
+    width: 50vw;
+    height: 50vw;
+    border-radius: 1vw;
+  }
+  .card .moreOptions .addStock {
+    font-size: 2vw;
+  }
+  .card .moreOptions .addImage {
+    font-size: 2vw;
+  }
+  .card .insideContent .edit {
+    font-size: 2vw;
+  }
+  .card .insideContent .deactivate {
+    font-size: 2vw;
+  }
+}

@@ -1,0 +1,325 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cairo&family=Kanit&family=Roboto&display=swap");
+.main_Container {
+  background-color: whitesmoke;
+  min-height: 100vh;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0vw 10vw;
+}
+nav h1 {
+  font-family: "Anton", sans-serif;
+  font-size: 2vw;
+  color: #16324e;
+}
+nav ul {
+  display: flex;
+}
+nav ul li {
+  list-style: none;
+  padding: 0.7vw;
+}
+nav ul li a {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: bold;
+  color: #16324e;
+  text-decoration: none;
+}
+nav ul li a:hover {
+  text-decoration: none;
+  color: #16324e;
+}
+@media (max-width: 920px) {
+  nav h1 {
+    font-family: "Anton", sans-serif;
+    font-size: 5vw;
+    padding-top: 1vw;
+  }
+  nav ul {
+    display: none;
+  }
+}
+.main_Content {
+  margin: 0vw 5vw;
+}
+.main_Content .title {
+  font-family: "Anton", sans-serif;
+  margin-left: 10vw;
+  color: #16324e;
+}
+
+@media (max-width: 920px) {
+  .main_Content h1 {
+    font-family: "Anton", sans-serif;
+    font-size: 5vw;
+  }
+}
+.card_Content {
+  display: block;
+}
+.main_Order_Container {
+  display: flex;
+  justify-content: flex-start;
+  padding: 1vw;
+  margin-bottom: 1vw;
+  width: 100%;
+}
+.main_Order_Container div {
+  margin-left: 1vw;
+}
+.image_Container img {
+  width: 12vw;
+  height: 12vw;
+}
+.main_Info,
+.second_Info {
+  width: 30vw;
+  padding-left: 1vw;
+}
+.action {
+  display: block;
+  justify-content: center;
+  text-align: center;
+}
+
+.main_Info h1 {
+  font-size: 0.7vw;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+.second_Info h3 {
+  font-size: 0.7vw;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+.second_Info button {
+  background-color: #16324e;
+  color: #f1f1f1;
+  font-size: 1vw;
+  font-family: "Roboto", sans-serif;
+  padding: 0.5vw 2vw;
+  width: 15vw;
+}
+.action button {
+  background-color: #16324e;
+  color: #f1f1f1;
+  font-size: 1vw;
+  font-family: "Roboto", sans-serif;
+  padding: 0.5vw 2vw;
+  width: 15vw;
+}
+.action form {
+  text-align: center;
+}
+.action form input[type="submit"] {
+  background-color: #16324e;
+  color: #f1f1f1;
+  font-size: 1vw;
+  font-family: "Roboto", sans-serif;
+  padding: 0.5vw 2vw;
+  width: 15vw;
+}
+.action form input[type="text"] {
+  color: black;
+  font-size: 1vw;
+  font-family: "Roboto", sans-serif;
+  padding: 0.5vw 2vw;
+  width: 15vw;
+}
+.action a,
+label {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.8vw;
+  font-weight: bold;
+}
+@media (max-width: 920px) {
+  hr {
+    /* display: none; */
+  }
+  .main_Order_Container {
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+    display: block;
+    justify-content: flex-start;
+    padding: 1vw;
+    margin-bottom: 1vw;
+    width: 100%;
+    text-align: center;
+  }
+  .main_Order_Container div {
+    margin-left: 1vw;
+  }
+  .image_Container {
+  }
+  .image_Container img {
+    width: 40vw;
+    height: 40vw;
+  }
+  .main_Info,
+  .second_Info,
+  .action {
+    width: 100%;
+    padding-left: 1vw;
+  }
+  .action {
+    display: block;
+    text-align: center;
+  }
+
+  .main_Info h1 {
+    font-size: 4vw;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+  }
+  .second_Info h3 {
+    font-size: 4vw;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+  }
+  .action button {
+    background-color: #16324e;
+    color: #f1f1f1;
+    font-size: 4vw;
+    font-family: "Roboto", sans-serif;
+    padding: 0.5vw 2vw;
+    /* margin-top: 1vw; */
+    width: 35vw;
+  }
+  .action form {
+    text-align: center;
+  }
+  .action form input[type="submit"] {
+    background-color: #16324e;
+    color: #f1f1f1;
+    font-size: 4vw;
+    font-family: "Roboto", sans-serif;
+    padding: 0.5vw 2vw;
+    width: 50vw;
+  }
+  .action form input[type="text"] {
+    color: black;
+    font-size: 3vw;
+    font-family: "Roboto", sans-serif;
+    padding: 0.5vw 2vw;
+    width: auto;
+  }
+  .action a,
+  label {
+    font-family: "Roboto", sans-serif;
+    font-size: 4vw;
+    font-weight: bold;
+  }
+}
+nav img {
+  display: none;
+  height: 7vw;
+  width: 7vw;
+}
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 15%;
+  width: 100%;
+  text-align: center;
+  margin-top: 0px;
+}
+.overlay-content li {
+  list-style: none;
+}
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media (max-width: 920px) {
+  .overlay a {
+    font-size: 40px;
+  }
+  .overlay .closebtn {
+    font-size: 50px;
+    top: 15px;
+    right: 35px;
+  }
+  nav img {
+    display: flex;
+  }
+}
+.mainPaymentCon {
+  display: block;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+  padding: 1vw;
+  margin-bottom: 1vw;
+  width: 100%;
+}
+.allDetails {
+  display: flex;
+  justify-content: space-evenly;
+}
+.allDetails h1 {
+  font-size: 1vw;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+.second_Info button {
+  background-color: #16324e;
+  color: #f1f1f1;
+  font-size: 1vw;
+  font-family: "Roboto", sans-serif;
+  padding: 0.5vw 2vw;
+  width: 15vw;
+}
+.clickableOrders {
+  display: flex;
+  justify-content: right;
+}
+.clickableOrders a button {
+  color: white;
+  background-color: #16324e;
+  font-size: 1vw;
+  width: 10vw;
+  border-radius: 5px;
+}
+@media (max-width: 920px) {
+  .allDetails {
+    display: block;
+    text-align: center;
+  }
+  .allDetails h1 {
+    font-size: 4vw;
+  }
+  .second_Info button {
+    font-size: 4vw;
+    width: 40vw;
+  }
+}

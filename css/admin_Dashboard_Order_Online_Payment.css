@@ -1,0 +1,335 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&display=swap");
+
+/* all about side nav */
+.sideNav {
+  background-color: #102336;
+  height: 100%;
+  width: 15vw;
+  position: fixed;
+  overflow-x: hidden;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+.sideNav h1 {
+  padding-top: 2vw;
+  color: whitesmoke;
+  font-family: "Anton", sans-serif;
+  text-align: center;
+  font-size: 2vw;
+}
+.sideNav a div img {
+  width: 2vw;
+}
+.sideNav a div span {
+  color: whitesmoke;
+  font-weight: bold;
+  font-size: 1vw;
+}
+.profile {
+  text-align: center;
+  padding-bottom: 1vw;
+}
+.profile a img {
+  width: 4vw;
+  border-radius: 50%;
+}
+.profile p {
+  color: whitesmoke;
+  font-weight: bold;
+  font-size: 1vw;
+}
+.sideNav a {
+  text-decoration: none;
+}
+.list div {
+  padding-left: 2.5vw;
+}
+.list div:hover {
+  background-color: #16324e;
+}
+@media (max-width: 920px) {
+  .sideNav a div img {
+    width: 9vw;
+  }
+  .sideNav a div span {
+    display: none;
+  }
+  .profile a img {
+    width: 12vw;
+  }
+  .profile p {
+    font-size: 3vw;
+  }
+  .sideNav h1 {
+    font-size: 4vw;
+  }
+}
+/* all bout main nav */
+.mainContent {
+  margin-left: 15vw;
+  background-color: #16324e;
+  transition: 0.5s;
+  height: 2vw;
+}
+.mainContent nav {
+  display: flex;
+  justify-content: space-between;
+}
+.mainContent nav img {
+  width: 2vw;
+  height: 2vw;
+}
+.mainContent nav h1 {
+  font-size: 1.7vw;
+  color: whitesmoke;
+  font-family: "Anton", sans-serif;
+}
+
+.mainContent nav .logout {
+  font-size: 1.2vw;
+  padding-right: 1vw;
+  color: whitesmoke;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: bold;
+}
+.infut {
+  background-color: #16324e;
+  color: whitesmoke;
+}
+@media (max-width: 920px) {
+  .mainContent {
+    height: 7vw;
+  }
+
+  .mainContent nav img {
+    width: 7vw;
+    height: 7vw;
+  }
+  .mainContent nav h1 {
+    font-size: 6vw;
+  }
+
+  .mainContent nav .logout {
+    font-size: 4vw;
+    padding-right: 1vw;
+  }
+}
+.main_panel {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.form_Con {
+  text-align: center;
+  width: 30vw;
+}
+.form_Con form {
+  margin-top: 5vw;
+}
+.form_Con p {
+  font-family: "Roboto", sans-serif;
+  color: #102336;
+  font-size: 2vw;
+  text-align: center;
+}
+.form_Con form label {
+  font-family: "Roboto", sans-serif;
+  color: #102336;
+  font-size: 2vw;
+}
+hr {
+  display: none;
+  border: white 2px solid;
+}
+#imageName {
+  color: #102336;
+  font-size: 1vw;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 20vw;
+  display: inline-block;
+}
+.form_Con #reference_Number {
+  font-size: 1vw;
+  font-family: "Roboto", sans-serif;
+  width: 80%;
+}
+.submit_Payment {
+  background-color: #16324e;
+  color: whitesmoke;
+  font-size: 1.5vw;
+  width: 20vw;
+  height: 3vw;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  box-shadow: rgba(255, 255, 255, 0.25) 0px 54px 55px,
+    rgba(200, 195, 195, 0.12) 0px -12px 30px,
+    rgba(219, 210, 210, 0.12) 0px 4px 6px,
+    rgba(210, 196, 196, 0.17) 0px 12px 13px,
+    rgba(249, 243, 243, 0.09) 0px -3px 5px;
+}
+.btnBack {
+  background-color: #16324e;
+  color: whitesmoke;
+  font-size: 1vw;
+  width: 5vw;
+  margin-left: 1vw;
+  height: auto;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  box-shadow: rgba(255, 255, 255, 0.25) 0px 54px 55px,
+    rgba(200, 195, 195, 0.12) 0px -12px 30px,
+    rgba(219, 210, 210, 0.12) 0px 4px 6px,
+    rgba(210, 196, 196, 0.17) 0px 12px 13px,
+    rgba(249, 243, 243, 0.09) 0px -3px 5px;
+}
+@media (max-width: 920px) {
+  .btnBack {
+    background-color: #16324e;
+    color: whitesmoke;
+    font-size: 3vw;
+    width: 20vw;
+    margin-left: 1vw;
+    height: auto;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    box-shadow: rgba(255, 255, 255, 0.25) 0px 54px 55px,
+      rgba(200, 195, 195, 0.12) 0px -12px 30px,
+      rgba(219, 210, 210, 0.12) 0px 4px 6px,
+      rgba(210, 196, 196, 0.17) 0px 12px 13px,
+      rgba(249, 243, 243, 0.09) 0px -3px 5px;
+  }
+  hr {
+    display: flex;
+  }
+  .main_panel {
+    display: block;
+  }
+  .form_Con {
+    text-align: center;
+    width: 100%;
+  }
+  .form_Con form {
+    margin-top: 5vw;
+  }
+  .form_Con p {
+    font-size: 5vw;
+    margin-top: 5vw;
+  }
+  .form_Con form label {
+    font-family: "Roboto", sans-serif;
+    color: #102336;
+    font-size: 5vw;
+    /* text-shadow: 2px 2px black; */
+  }
+  #imageName {
+    font-size: 5vw;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 60vw;
+    display: inline-block;
+  }
+  .form_Con #reference_Number {
+    font-size: 5vw;
+  }
+  .submit_Payment {
+    font-size: 5vw;
+    width: 50vw;
+    height: auto;
+  }
+}
+
+.allOrder {
+  /* Set a max-width to limit the width of the page */
+  max-width: 100%;
+  max-height: 1500%;
+  overflow-x: auto; /* Add horizontal scrolling if needed */
+  margin: 2vw;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  background-color: #16324e;
+}
+
+#ordersTable {
+  width: 100%;
+  border-collapse: collapse;
+  /* background-color: lightgray; */
+  font-family: Arial, Helvetica, sans-serif;
+  white-space: nowrap;
+  border: 1px solid #16324e;
+}
+
+/* Style for the table header */
+#ordersTable thead th {
+  background-color: #16324e;
+  position: sticky; /* Make the header sticky */
+  top: 0; /* Stick to the top */
+  color: whitesmoke;
+}
+
+/* Style for table cells (optional) */
+#ordersTable td {
+  border: 1px solid gray;
+  padding: 8px;
+  text-align: center;
+}
+
+/* Style for table rows (optional) */
+.even-row {
+  background-color: white !important;
+}
+.even-row:nth-child(even) {
+  background-color: whitesmoke !important;
+}
+.even-row:hover {
+  background-color: lightgrey !important;
+}
+/* Style for the table image (optional) */
+.img {
+  border-radius: 1vw;
+  height: 20vw;
+  width: auto;
+}
+.form_Container {
+  display: flex;
+  justify-content: space-evenly;
+}
+.form_Container div form {
+  text-align: center;
+}
+.btnRecieved {
+  color: whitesmoke;
+  background-color: #102336;
+  padding: 0.5vw 2vw;
+  border-radius: 10px;
+}
+.allOrdersContainer {
+  display: flex;
+  justify-content: space-between;
+}
+.allOrdersTitle {
+  color: whitesmoke;
+  font-family: "Anton", sans-serif;
+  margin: 0vw 1vw;
+  font-size: 2vw;
+}
+@media (max-width: 920px) {
+  .allOrdersContainer {
+    display: block;
+    text-align: center;
+  }
+  .allOrdersTitle {
+    color: whitesmoke;
+    font-family: "Anton", sans-serif;
+    margin: 0vw 1vw;
+    font-size: 4vw;
+  }
+}

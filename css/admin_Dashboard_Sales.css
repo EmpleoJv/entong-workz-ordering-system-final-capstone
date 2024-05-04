@@ -1,0 +1,431 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&display=swap");
+
+/* all about side nav */
+.sideNav {
+  background-color: #102336;
+  height: 100%;
+  width: 15vw;
+  position: fixed;
+  overflow-x: hidden;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+.sideNav h1 {
+  padding-top: 2vw;
+  color: whitesmoke;
+  font-family: "Anton", sans-serif;
+  text-align: center;
+  font-size: 2vw;
+}
+.sideNav a div img {
+  width: 2vw;
+}
+
+.sideNav a div span {
+  color: whitesmoke;
+  font-weight: bold;
+  font-size: 1vw;
+}
+.profile {
+  text-align: center;
+  padding-bottom: 1vw;
+}
+.profile a img {
+  width: 4vw;
+  border-radius: 50%;
+}
+.profile p {
+  color: whitesmoke;
+  font-weight: bold;
+  font-size: 1vw;
+}
+.sideNav a {
+  text-decoration: none;
+}
+.list div {
+  padding-left: 2.5vw;
+}
+.list div:hover {
+  background-color: #16324e;
+}
+@media (max-width: 920px) {
+  .sideNav a div img {
+    width: 9vw;
+  }
+  .sideNav a div span {
+    display: none;
+  }
+  .profile a img {
+    width: 12vw;
+  }
+  .profile p {
+    font-size: 3vw;
+  }
+  .sideNav h1 {
+    font-size: 4vw;
+  }
+}
+/* all bout main nav */
+.mainContent {
+  margin-left: 15vw;
+  background-color: #16324e;
+  transition: 0.5s;
+  height: 2vw;
+}
+.mainContent nav {
+  display: flex;
+  justify-content: space-between;
+}
+.mainContent nav img {
+  width: 2vw;
+  height: 2vw;
+}
+.mainContent nav h1 {
+  font-size: 1.7vw;
+  color: whitesmoke;
+  font-family: "Anton", sans-serif;
+}
+
+.mainContent nav .logout {
+  font-size: 1.2vw;
+  padding-right: 1vw;
+  color: whitesmoke;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: bold;
+}
+
+@media (max-width: 920px) {
+  .mainContent {
+    height: 7vw;
+  }
+
+  .mainContent nav img {
+    width: 7vw;
+    height: 7vw;
+  }
+  .mainContent nav h1 {
+    font-size: 6vw;
+  }
+
+  .mainContent nav .logout {
+    font-size: 4vw;
+    padding-right: 1vw;
+  }
+}
+
+.allOrdersContainer {
+  display: flex;
+}
+.allOrdersContainer label {
+  color: whitesmoke;
+}
+.allOrder {
+  /* Set a max-width to limit the width of the page */
+  max-width: 100%;
+  max-height: 1500%;
+  overflow-x: auto; /* Add horizontal scrolling if needed */
+  margin: 2vw;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  background-color: #16324e;
+}
+.allOrdersTitle {
+  color: whitesmoke;
+  font-family: "Anton", sans-serif;
+  margin-left: 1vw;
+}
+#ordersTable {
+  width: 100%;
+  border-collapse: collapse;
+  /* background-color: lightgray; */
+  font-family: Arial, Helvetica, sans-serif;
+  white-space: nowrap;
+  border: 1px solid #16324e;
+}
+
+/* Style for the table header */
+#ordersTable thead th {
+  background-color: #16324e;
+  position: sticky; /* Make the header sticky */
+  top: 0; /* Stick to the top */
+  color: whitesmoke;
+  text-align: center;
+}
+
+/* Style for table cells (optional) */
+#ordersTable td {
+  border: 1px solid gray;
+  padding: 8px;
+  text-align: center;
+}
+
+/* Style for table rows (optional) */
+.even-row {
+  background-color: white !important;
+}
+.even-row:nth-child(even) {
+  background-color: whitesmoke !important;
+}
+.even-row:hover {
+  background-color: lightgrey !important;
+}
+/* Style for the table image (optional) */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 25vw 25vw 25vw;
+  margin: 0vw 5vw;
+}
+.grid-item {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-left: 5px solid;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  margin: 0.5vw;
+  padding: 1vw;
+  display: flex;
+  justify-content: space-between;
+}
+.grid-item div {
+  border-left-color: #16324e;
+}
+.grid-item div h3 {
+  font-family: "Anton", sans-serif;
+  color: #16324e;
+}
+.grid-item h2 {
+  font-size: 2vw;
+  color: black;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: bold;
+}
+/* #all {
+  border-left-color: #16324e;
+} */
+/* #all h3 {
+  font-family: "Anton", sans-serif;
+  color: #16324e;
+} */
+/* #all h2 {
+  font-size: 2vw;
+  color: black;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: bold;
+} */
+.grid-item div img {
+  height: 4vw;
+  width: 4vw;
+}
+@media (max-width: 920px) {
+  .grid-container {
+    display: block;
+  }
+
+  #all h3 {
+    font-family: "Anton", sans-serif;
+    font-size: 5vw;
+  }
+  #all h2 {
+    font-size: 5vw;
+    color: black;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: bold;
+  }
+  .grid-item div img {
+    height: 7vw;
+    width: 7vw;
+  }
+}
+.charts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: 60px;
+}
+
+.charts-card {
+  background-color: #252323;
+  margin-bottom: 20px;
+  padding: 25px;
+  box-sizing: border-box;
+  -webkit-column-break-inside: avoid;
+  border-radius: 5px;
+  box-shadow: 0 6px 7px -4px rgba(0, 0, 0, 0.2);
+}
+
+.charts-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Show_Popup {
+  position: flex;
+  top: 3vw;
+  left: 8vw;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.Show_Popup .add_form {
+  height: 46vw;
+  width: 55vw;
+  background-color: aliceblue;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  backdrop-filter: blur(50px);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  position: relative;
+  overflow: hidden;
+  overflow-y: auto;
+}
+@media print {
+  .sideNav {
+    display: none;
+  }
+}
+
+/* Style for the custom select */
+.custom-select {
+  width: 150px; /* Set the width as desired */
+  border: 1px solid #ccc;
+  position: relative;
+  cursor: pointer;
+}
+
+.select-value {
+  padding: 5px;
+  background-color: #fff;
+}
+
+.options {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  background-color: #fff;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-height: 100px; /* Set the maximum height as desired */
+  overflow-y: auto;
+  border-top: 1px solid #ccc;
+}
+
+.option {
+  padding: 5px;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Show options on click */
+.custom-select.open .options {
+  display: block;
+}
+.filter {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1vw;
+}
+.actionsTable {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0.5vw 0vw 0vw 0vw;
+}
+.filter .actionsTable button {
+  background-color: #102336;
+  color: whitesmoke;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: bold;
+  width: 10vw;
+  font-size: 1vw;
+}
+.filter .actionsTable label {
+  font-size: 1vw;
+  color: whitesmoke;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: bold;
+  width: 4vw;
+  font-size: 1vw;
+}
+#refreshTable {
+  background-color: #102336;
+  color: whitesmoke;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: bold;
+  width: 10vw;
+  font-size: 1vw;
+}
+.actionsTable input {
+  width: 10vw;
+  font-weight: bold;
+  padding: 1vw;
+}
+.dateCon {
+  margin-left: 1vw;
+  margin-right: 1vw;
+}
+@media (max-width: 920px) {
+  .filter {
+    display: block;
+  }
+  .actionsTable {
+    display: block;
+  }
+  .filter .actionsTable button {
+    background-color: #102336;
+    color: whitesmoke;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: bold;
+    width: 20vw;
+    font-size: 5vw;
+  }
+  .filter .actionsTable label {
+    font-size: 1vw;
+    color: whitesmoke;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: bold;
+    width: 20vw;
+    font-size: 5vw;
+  }
+  #refreshTable {
+    background-color: #102336;
+    color: whitesmoke;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: bold;
+    width: 20vw;
+    font-size: 5vw;
+  }
+  .actionsTable input {
+    width: 50vw;
+    font-weight: bold;
+  }
+}
+.show_Update {
+  position: absolute;
+  top: 3.5vw;
+  left: 5vw;
+  /* justify-content: center; */
+  align-items: center;
+  margin-left: 10vw;
+  /* display: none; */
+}
+.show_Update .show_form {
+  height: auto;
+  width: 70vw;
+  /* background-color: #102336; */
+  background-color: white;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  backdrop-filter: blur(50px);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  position: relative;
+  overflow: hidden;
+}

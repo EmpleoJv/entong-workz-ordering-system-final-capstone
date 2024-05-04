@@ -1,0 +1,315 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&display=swap");
+
+/* all about side nav */
+.sideNav {
+  background-color: #102336;
+  height: 100%;
+  width: 15vw;
+  position: fixed;
+  overflow-x: hidden;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+.sideNav h1 {
+  padding-top: 2vw;
+  color: whitesmoke;
+  font-family: "Anton", sans-serif;
+  text-align: center;
+  font-size: 2vw;
+}
+.sideNav a div img {
+  width: 2vw;
+}
+
+.sideNav a div span {
+  color: whitesmoke;
+  font-weight: bold;
+  font-size: 1vw;
+}
+.profile {
+  text-align: center;
+  padding-bottom: 1vw;
+}
+.profile a img {
+  width: 4vw;
+  border-radius: 50%;
+}
+.profile p {
+  color: whitesmoke;
+  font-weight: bold;
+  font-size: 1vw;
+}
+.sideNav a {
+  text-decoration: none;
+}
+.list div {
+  padding-left: 2.5vw;
+}
+.list div:hover {
+  background-color: #16324e;
+}
+@media (max-width: 920px) {
+  .sideNav a div img {
+    width: 9vw;
+  }
+  .sideNav a div span {
+    display: none;
+  }
+  .profile a img {
+    width: 12vw;
+  }
+  .profile p {
+    font-size: 3vw;
+  }
+  .sideNav h1 {
+    font-size: 4vw;
+  }
+}
+/* all bout main nav */
+.mainContent {
+  margin-left: 15vw;
+  background-color: #16324e;
+  transition: 0.5s;
+  height: 2vw;
+}
+.mainContent nav {
+  display: flex;
+  justify-content: space-between;
+}
+.mainContent nav img {
+  width: 2vw;
+  height: 2vw;
+}
+.mainContent nav h1 {
+  font-size: 1.7vw;
+  color: whitesmoke;
+  font-family: "Anton", sans-serif;
+}
+
+.mainContent nav .logout {
+  font-size: 1.2vw;
+  padding-right: 1vw;
+  color: whitesmoke;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: bold;
+}
+
+@media (max-width: 920px) {
+  .mainContent {
+    height: 7vw;
+  }
+
+  .mainContent nav img {
+    width: 7vw;
+    height: 7vw;
+  }
+  .mainContent nav h1 {
+    font-size: 6vw;
+  }
+
+  .mainContent nav .logout {
+    font-size: 4vw;
+    padding-right: 1vw;
+  }
+}
+/* all about the form */
+.first_container {
+  padding: 0vw 5vw;
+}
+.first_container h1 {
+  font-size: 2vw;
+  text-align: left;
+  font-family: "Anton", sans-serif;
+  padding-left: 5vw;
+}
+.second_container {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2vw 0vw;
+}
+.fourt_container {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 2vw;
+}
+.fourt_container label {
+  font-size: 1.2vw;
+}
+.fourt_container input {
+  margin-left: 2vw;
+  padding: 0vw 1vw;
+  border-radius: 1vw;
+}
+.fourt_container select {
+  padding: 0vw 2vw;
+  border-radius: 1vw;
+}
+.fileClass {
+  font-size: 1vw;
+}
+.submitInput {
+  text-align: right;
+}
+.submitInput input {
+  background-color: #16324e;
+  color: whitesmoke;
+  font-size: 1vw;
+  padding: 0.3vw 1vw 0.4vw 1vw;
+  font-family: "Anton", sans-serif;
+  border-radius: 0.5vw;
+}
+.addingUserError {
+  text-align: center;
+  border: 0.1vw solid red;
+  background-color: pink;
+  border-radius: 2vw;
+  margin: 0vw 30vw;
+  margin-top: 1vw;
+  font-size: 1vw;
+}
+@media (max-width: 920px) {
+  .second_container {
+    display: block;
+  }
+  .fourt_container label {
+    font-size: 3.5vw;
+  }
+  .fileClass {
+    font-size: 3vw;
+  }
+  .first_container h1 {
+    font-size: 6vw;
+  }
+  .addingUserError {
+    border: 0.2vw solid red;
+    margin: 0vw 10vw;
+    margin-top: 2vw;
+    font-size: 4vw;
+  }
+  .submitInput input {
+    font-size: 4vw;
+    padding: 0.3vw 1vw 0.4vw 1vw;
+  }
+  .fourt_container input {
+    margin-left: 2vw;
+    padding: 0vw 1vw;
+    border-radius: 1vw;
+    width: 50vw;
+  }
+}
+/* all about the grid  */
+.grid-container {
+  display: grid;
+  grid-template-columns: 25vw 25vw 25vw;
+  margin: 0vw 5vw;
+}
+.grid-item {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-left: 5px solid;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  margin: 0.5vw;
+  padding: 1vw;
+  display: flex;
+  justify-content: space-between;
+}
+.grid-container a {
+  text-decoration: none;
+}
+#staff_User {
+  border-left-color: orange;
+}
+#staff_User h3 {
+  font-family: "Anton", sans-serif;
+  color: orange;
+}
+#staff_User h2 {
+  font-size: 4vw;
+  color: black;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: bold;
+}
+
+#logistic_User {
+  border-left-color: #2491ff;
+}
+#logistic_User h3 {
+  font-family: "Anton", sans-serif;
+  color: #2491ff;
+}
+#logistic_User h2 {
+  font-size: 4vw;
+  color: black;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: bold;
+}
+
+#registered_User {
+  border-left-color: #e74c3c;
+}
+#registered_User h3 {
+  font-family: "Anton", sans-serif;
+  color: #e74c3c;
+}
+#registered_User h2 {
+  font-size: 4vw;
+  color: black;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: bold;
+}
+
+#deactivated_User {
+  border-left-color: #a24fff;
+}
+#deactivated_User h3 {
+  font-family: "Anton", sans-serif;
+  color: #a24fff;
+}
+#deactivated_User h2 {
+  font-size: 4vw;
+  color: black;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: bold;
+}
+@media (max-width: 920px) {
+  .grid-container {
+    grid-template-columns: auto;
+  }
+  .grid-item {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    margin: 3vw;
+    padding: 3vw;
+    text-align: center;
+  }
+  #staff_User h2 {
+    font-size: 10vw;
+  }
+  #logistic_User h2 {
+    font-size: 10vw;
+  }
+  #registered_User h2 {
+    font-size: 10vw;
+  }
+  #deactivated_User h2 {
+    font-size: 10vw;
+  }
+
+  #staff_User h3 {
+    font-size: 4vw;
+  }
+  #logistic_User h3 {
+    font-size: 4vw;
+  }
+  #registered_User h3 {
+    font-size: 4vw;
+  }
+  #deactivated_User h3 {
+    font-size: 4vw;
+  }
+}

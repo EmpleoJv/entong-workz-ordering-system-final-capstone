@@ -1,0 +1,356 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&display=swap");
+
+.main_Container {
+  background-color: whitesmoke;
+  min-height: 100vh;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0vw 10vw;
+}
+nav h1 {
+  font-family: "Anton", sans-serif;
+  font-size: 2vw;
+}
+nav ul {
+  display: flex;
+}
+nav ul li {
+  list-style: none;
+  padding: 0.7vw;
+}
+nav ul li a {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: bold;
+  color: black;
+}
+nav ul li a:hover {
+  text-decoration: none;
+}
+nav img {
+  display: none;
+  height: 7vw;
+  width: 7vw;
+}
+@media (max-width: 920px) {
+  nav h1 {
+    font-family: "Anton", sans-serif;
+    font-size: 5vw;
+  }
+  nav ul {
+    display: none;
+  }
+  nav img {
+    display: flex;
+  }
+}
+
+.sub_Container {
+  background-color: white;
+  margin: 0vw 2vw;
+  margin-top: 1vw;
+  padding: 0.5vw 0vw 0vw 0.5vw;
+  border-top-left-radius: 1vw;
+  border-top-right-radius: 1vw;
+  border-radius: 1vw;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.search_Container {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0vw 2vw;
+}
+.search_Container form {
+  margin: 0.5vw;
+  display: flex;
+}
+.search_Container form input[type="submit"] {
+  background-color: #16324e;
+  color: whitesmoke;
+  padding: 0.2vw 1vw;
+  border-radius: 5px;
+  font-size: 1vw;
+}
+.search_Container form input[type="text"] {
+  font-size: 1vw;
+}
+.search_Container form select {
+  font-size: 1vw;
+}
+.search_Container form label {
+  font-size: 1vw;
+  padding: 0.2vw 1vw;
+}
+@media (max-width: 920px) {
+  .sub_Container {
+    background-color: white;
+    margin: 0vw 0vw;
+    padding: 0vw 0vw 0vw 0vw;
+    border-top-left-radius: 1vw;
+    border-top-right-radius: 1vw;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+  .search_Container {
+    display: block;
+    text-align: center;
+    margin-top: 2vw;
+  }
+  .search_Container form input[type="submit"] {
+    font-size: 2vw;
+  }
+  .search_Container form label {
+    font-size: 2vw;
+  }
+  .search_Container form input[type="text"] {
+    font-size: 2vw;
+  }
+  .search_Container form select {
+    font-size: 2vw;
+  }
+}
+
+.card_Content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card {
+  margin: 0.5vw;
+  padding: 1vw;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  /* border-radius: 1vw; */
+  height: auto;
+  width: 17.2vw;
+}
+.card .image {
+  left: 50%;
+  margin: auto;
+}
+.card .image img {
+  width: 15vw;
+  height: 15vw;
+  border-radius: 1vw;
+}
+.details h6 {
+  font-size: 1.5vw;
+}
+
+.details div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.actions a button {
+  color: whitesmoke;
+  background-color: #16324e;
+  border-radius: 5px;
+  font-size: 1vw;
+  font-family: "Anton", sans-serif;
+  width: 10vw;
+}
+.actions a img {
+  height: 3vw;
+  width: 3vw;
+}
+.name {
+  font-size: 1vw;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.description {
+  font-size: 1vw;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+span {
+  color: #de2e23;
+}
+@media (max-width: 920px) {
+  .card {
+    width: 40%;
+  }
+  .card .image img {
+    width: 35vw;
+    height: 35vw;
+  }
+  .details h6 {
+    font-size: 3.5vw;
+  }
+  .description {
+    font-size: 3vw;
+  }
+  .actions a button {
+    font-size: 3vw;
+    /* padding: 0.5vw 6.5vw; */
+    width: 20vw;
+  }
+  .actions a img {
+    height: 8vw;
+    width: 8vw;
+  }
+}
+
+#myInput {
+  padding: 0.5vw;
+  border-radius: 1vw;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: bold;
+}
+#sortButton {
+  border-radius: 1vw;
+  color: whitesmoke;
+  background-color: #16324e;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: bold;
+}
+#sortButton2 {
+  border-radius: 1vw;
+  color: whitesmoke;
+  background-color: #16324e;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: bold;
+}
+#categorySelect {
+  padding: 0.5vw;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: bold;
+  border-radius: 1vw;
+}
+#brandSelect {
+  padding: 0.5vw;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: bold;
+  border-radius: 1vw;
+}
+#refreshButton {
+  padding: 0vw 1vw;
+  border-radius: 1vw;
+  color: whitesmoke;
+  background-color: #16324e;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: bold;
+}
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 15%;
+  width: 100%;
+  text-align: center;
+  margin-top: 0px;
+}
+.overlay-content li {
+  list-style: none;
+}
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media (max-width: 920px) {
+  .overlay a {
+    font-size: 40px;
+  }
+  .overlay .closebtn {
+    font-size: 50px;
+    top: 15px;
+    right: 35px;
+  }
+}
+.a {
+  text-decoration: none;
+}
+.a:hover {
+  text-decoration: none;
+}
+.Recommendation h1 {
+  text-align: center;
+}
+.Recommendation .second_Con {
+  margin: 0vw 2vw;
+  display: flex;
+  justify-content: space-evenly;
+}
+.card_con {
+  background-color: #16324e;
+  padding: 1vw;
+  width: 15vw;
+  height: 9vw;
+  /* border-radius: 10px; */
+  display: flex;
+}
+.image_con img {
+  background-color: whitesmoke;
+  width: 7vw;
+  height: 7vw;
+  border: black solid 2px;
+  border-radius: 10px;
+  margin-right: 0.5vw;
+}
+.info_con {
+  overflow: hidden;
+  width: 100%;
+}
+.info_con div {
+  display: block;
+  justify-content: space-between;
+}
+.info_con p {
+  color: whitesmoke;
+  text-decoration: none;
+  font-size: 1vw;
+}
+
+.info_con .info {
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Adjust the number of lines you want to display */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+}
+@media (max-width: 920px) {
+.Recommendation .second_Con {
+
+  display: none;
+
+    }
+}
+

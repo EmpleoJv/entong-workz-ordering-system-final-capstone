@@ -1,0 +1,383 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&display=swap");
+
+main {
+  background-color: #102336;
+  min-height: 100vh;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0vw 10vw;
+}
+nav h1 {
+  font-family: "Anton", sans-serif;
+  font-size: 2vw;
+  color: whitesmoke;
+}
+nav ul {
+  display: flex;
+}
+nav ul li {
+  list-style: none;
+  padding: 0.7vw;
+}
+nav ul li a {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: bold;
+  color: whitesmoke;
+  text-decoration: none;
+}
+nav ul li a:hover {
+  text-decoration: none;
+  color: whitesmoke;
+}
+@media (max-width: 920px) {
+  nav h1 {
+    font-family: "Anton", sans-serif;
+    font-size: 5vw;
+    padding-top: 1vw;
+  }
+  nav ul {
+    display: none;
+  }
+}
+.top {
+  grid-area: title;
+}
+.item1 {
+  grid-area: images;
+}
+.item2 {
+  grid-area: infos;
+}
+.item3 {
+  grid-area: verif;
+}
+
+.grid-container {
+  display: grid;
+  background-color: white;
+  grid-template-areas:
+    "title title title title title title"
+    "images images infos infos infos infos"
+    "verif verif verif verif verif verif";
+  gap: 10px;
+  padding: 10px;
+  margin: 0vw 5vw;
+  border-radius: 1vw;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+@media (max-width: 920px) {
+  .grid-container {
+    display: block;
+    background-color: white;
+    grid-template-areas:
+      "title title title title title title"
+      "images images infos infos infos infos"
+      "verif verif verif verif verif verif";
+    gap: 10px;
+    padding: 10px;
+    margin: 0vw 5vw;
+    border-radius: 1vw;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+  .grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px 0;
+    font-size: 30px;
+  }
+}
+.imgPerson {
+  height: 15vw;
+  width: 15vw;
+  border: dotted 2px black;
+  border-radius: 50%;
+}
+
+.sumit_Image_Update {
+  background-color: #102336;
+  color: #fff;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: bold;
+}
+/* .inputFileImage {
+  color: #102336;
+  font-family: "Barlow Condensed", sans-serif;
+  background-color: #102336;
+} */
+.custom-file-upload {
+  background-color: #102336;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: bold;
+}
+.custom-file-upload input[type="file"] {
+  display: none;
+}
+/* Style for the verification images */
+
+.custom-file-upload-verification {
+  background-color: #102336;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: bold;
+}
+.custom-file-upload-verification input[type="file"] {
+  display: none;
+}
+.verificationID {
+  height: 15vw;
+  width: 25vw;
+  border: dotted 2px black;
+}
+.title {
+  color: #102336;
+}
+.profile_Info_Container {
+  display: flex;
+  justify-content: space-evenly;
+}
+.profile_Info_Container .left,
+.right {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 920px) {
+  .profile_Info_Container {
+    display: block;
+    justify-content: space-evenly;
+  }
+  .left div h2,
+  .right div h2 {
+    font-size: 3vw;
+  }
+  .profile_Info_Container .left,
+  .right {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.show_Update {
+  position: absolute;
+  top: 3.5vw;
+  left: 5vw;
+  align-items: center;
+  display: none;
+}
+.show_Update .show_form {
+  height: 30vw;
+  width: 90vw;
+  background-color: #102336;
+  /* background-color: whitesmoke; */
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  position: relative;
+  overflow: hidden;
+}
+.update_Container {
+  display: flex;
+  justify-content: space-around;
+}
+.update_Container div div {
+  display: flex;
+  justify-content: space-between;
+}
+.update {
+  color: #fff;
+  background-color: #102336;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: bold;
+  padding: 1vw;
+  border-radius: 1vw;
+}
+.start_Update {
+  color: #102336;
+  background-color: #fff;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: bolder;
+  padding: 0.5vw 1vw;
+  border-radius: 1vw;
+  font-size: 1vw;
+}
+.update_Container div div label {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: bold;
+  font-size: 1vw;
+  color: whitesmoke;
+}
+.update_Container div div input {
+  font-size: 1vw;
+  padding: 0vw 1vw;
+  border-radius: 1vw;
+}
+.update_Container div div select {
+  font-size: 1vw;
+  padding: 0vw 1vw;
+  border-radius: 1vw;
+}
+.secondForm div label {
+  padding-right: 10vw;
+}
+.hr {
+  color: whitesmoke;
+  width: 100%;
+}
+@media (max-width: 920px) {
+  .secondForm div label {
+    padding-right: 0vw;
+  }
+  .secondForm {
+    margin: 10vw 0vw 5vw 0vw;
+  }
+  .show_Update {
+    position: absolute;
+    top: 3.5vw;
+    left: 5vw;
+    align-items: center;
+    display: none;
+  }
+  .show_Update .show_form {
+    height: auto;
+    width: 90vw;
+    background-color: #102336;
+    /* background-color: whitesmoke; */
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    position: relative;
+    overflow: hidden;
+  }
+  .update_Container {
+    display: block;
+    justify-content: space-around;
+  }
+  .update_Container div div {
+    display: block;
+    justify-content: space-between;
+    text-align: center;
+  }
+  .update {
+    color: #fff;
+    background-color: #102336;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: bold;
+    padding: 1vw;
+    border-radius: 1vw;
+  }
+  .start_Update {
+    color: #102336;
+    background-color: #fff;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: bolder;
+    padding: 0.5vw 1vw;
+    border-radius: 1vw;
+    font-size: 5vw;
+    text-align: center;
+  }
+  .update_Container div div label {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: bold;
+    font-size: 5vw;
+    width: 100%;
+    color: whitesmoke;
+  }
+  .update_Container div div input {
+    font-size: 5vw;
+    padding: 0vw 1vw;
+    border-radius: 1vw;
+  }
+  .update_Container div div select {
+    font-size: 5vw;
+    padding: 0vw 1vw;
+    border-radius: 1vw;
+  }
+}
+nav img {
+  display: none;
+  height: 7vw;
+  width: 7vw;
+}
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 15%;
+  width: 100%;
+  text-align: center;
+  margin-top: 0px;
+}
+.overlay-content li {
+  list-style: none;
+}
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media (max-width: 920px) {
+  .overlay a {
+    font-size: 40px;
+  }
+  .overlay .closebtn {
+    font-size: 50px;
+    top: 15px;
+    right: 35px;
+  }
+  nav img {
+    display: flex;
+  }
+}
+input[type="file"] {
+  display: none;
+}

@@ -1,0 +1,13 @@
+Flat Rate Shipping fee
+= item 1 is 100
+
+Weight-Based Shipping 
+= item 1 50
+
+add is 150
+
+table 
+ShippingFee
+> ID
+> WEIGHT_BASED
+> SHIPPING_BASED

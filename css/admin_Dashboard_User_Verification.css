@@ -1,0 +1,285 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&display=swap");
+
+/* all about side nav */
+.sideNav {
+  background-color: #102336;
+  height: 100%;
+  width: 15vw;
+  position: fixed;
+  overflow-x: hidden;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+.sideNav h1 {
+  padding-top: 2vw;
+  color: whitesmoke;
+  font-family: "Anton", sans-serif;
+  text-align: center;
+  font-size: 2vw;
+}
+.sideNav a div img {
+  width: 2vw;
+}
+
+.sideNav a div span {
+  color: whitesmoke;
+  font-weight: bold;
+  font-size: 1vw;
+}
+.profile {
+  text-align: center;
+  padding-bottom: 1vw;
+}
+.profile a img {
+  width: 4vw;
+  border-radius: 50%;
+}
+.profile p {
+  color: whitesmoke;
+  font-weight: bold;
+  font-size: 1vw;
+}
+.sideNav a {
+  text-decoration: none;
+}
+.list div {
+  padding-left: 2.5vw;
+}
+.list div:hover {
+  background-color: #16324e;
+}
+@media (max-width: 920px) {
+  .sideNav a div img {
+    width: 9vw;
+  }
+  .sideNav a div span {
+    display: none;
+  }
+  .profile a img {
+    width: 12vw;
+  }
+  .profile p {
+    font-size: 3vw;
+  }
+  .sideNav h1 {
+    font-size: 4vw;
+  }
+}
+/* all bout main nav */
+.mainContent {
+  margin-left: 15vw;
+  background-color: #16324e;
+  transition: 0.5s;
+  height: 2vw;
+}
+.mainContent nav {
+  display: flex;
+  justify-content: space-between;
+}
+.mainContent nav img {
+  width: 2vw;
+  height: 2vw;
+}
+.mainContent nav h1 {
+  font-size: 1.7vw;
+  color: whitesmoke;
+  font-family: "Anton", sans-serif;
+}
+
+.mainContent nav .logout {
+  font-size: 1.2vw;
+  padding-right: 1vw;
+  color: whitesmoke;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: bold;
+}
+
+@media (max-width: 920px) {
+  .mainContent {
+    height: 7vw;
+  }
+  .mainContent nav img {
+    width: 7vw;
+    height: 7vw;
+  }
+  .mainContent nav h1 {
+    font-size: 6vw;
+  }
+  .mainContent nav .logout {
+    font-size: 4vw;
+    padding-right: 1vw;
+  }
+}
+
+.allOrdersContainer {
+  display: flex;
+  justify-content: space-between;
+  margin: 1vw;
+}
+.allOrdersContainer label {
+  color: whitesmoke;
+}
+.action_Container button {
+  font-family: "Anton", sans-serif;
+  letter-spacing: 1px;
+  color: #102336;
+  padding: 1vw 3vw;
+  border-radius: 10px;
+  font-size: 1vw;
+}
+@media (max-width: 920px) {
+  .allOrdersTitle {
+    color: whitesmoke;
+    font-family: "Anton", sans-serif;
+    margin-left: 5vw;
+    font-size: 2vw;
+  }
+  .allOrdersContainer {
+    display: block;
+    justify-content: space-between;
+    margin: 1vw;
+    text-align: center;
+  }
+  .allOrdersContainer label {
+    color: whitesmoke;
+  }
+  .action_Container {
+    display: block;
+  }
+  .action_Container button {
+    font-family: "Anton", sans-serif;
+    letter-spacing: 1px;
+    color: #102336;
+    padding: 1vw 3vw;
+    border-radius: 10px;
+    font-size: 5vw;
+    width: 60vw;
+  }
+}
+.allOrder {
+  /* Set a max-width to limit the width of the page */
+  max-width: 100%;
+  max-height: 10000%;
+  overflow-x: auto; /* Add horizontal scrolling if needed */
+  margin: 2vw;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background-color: #16324e;
+}
+
+#ordersTable {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  white-space: nowrap;
+  border: 1px solid #16324e;
+  background-color: whitesmoke;
+}
+
+#ordersTable td,
+#ordersTable th {
+  border: 1px solid #16324e;
+  padding: 8px;
+}
+#ordersTable tr:nth-child(even) {
+  background-color: white;
+}
+#ordersTable tr:hover {
+  background-color: lightgray;
+}
+#ordersTable th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #16324e;
+  color: white;
+  padding: 0vw 1vw;
+}
+.tableImage {
+  max-width: 100%;
+  height: auto;
+}
+.allOrdersTitle {
+  color: whitesmoke;
+  font-family: "Anton", sans-serif;
+  margin-left: 1vw;
+  font-size: 2vw;
+}
+.verification_Panel {
+  display: flex;
+  justify-content: space-evenly;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 25vw 25vw 25vw;
+  margin: 0vw 5vw;
+}
+.grid-item {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-left: 5px solid;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  margin: 0.5vw;
+  padding: 1vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+#all {
+  border-left-color: #8c1414;
+}
+#all h3 {
+  font-family: "Anton", sans-serif;
+  color: #8c1414;
+}
+#all h2 {
+  font-size: 2vw;
+  color: black;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: bold;
+}
+@media (max-width: 920px) {
+  .allOrdersTitle {
+    color: whitesmoke;
+    font-family: "Anton", sans-serif;
+    margin-left: 5vw;
+    font-size: 5vw;
+  }
+  .grid-container {
+    display: block;
+    grid-template-columns: 25vw 25vw 25vw;
+    margin: 0vw 5vw;
+  }
+  #all h2 {
+    font-size: 10vw;
+    color: black;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: bold;
+  }
+}
+.img_Container {
+  display: block;
+  text-align: center;
+}
+.img_Container .id img {
+  height: 30vw;
+  width: auto;
+}
+.img_Container .image img {
+  height: 30vw;
+  width: auto;
+}
+.submit_Class {
+  margin-bottom: 5vw;
+}
+.submit_Start {
+  color: whitesmoke;
+  background-color: #16324e;
+  font-size: 30px;
+  padding: 0.5vw 3vw;
+  border-radius: 20px;
+}

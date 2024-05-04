@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&display=swap");
+
+.main_Container {
+  background-color: whitesmoke;
+  min-height: 100vh;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0vw 10vw;
+}
+nav h1 {
+  font-family: "Anton", sans-serif;
+  font-size: 2vw;
+  color: #16324e;
+}
+nav ul {
+  display: flex;
+}
+nav ul li {
+  list-style: none;
+  padding: 0.7vw;
+}
+nav ul li a {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: bold;
+  color: #16324e;
+}
+nav ul li a:hover {
+  text-decoration: none;
+}
+@media (max-width: 920px) {
+  nav h1 {
+    font-family: "Anton", sans-serif;
+    font-size: 5vw;
+    padding-top: 1vw;
+  }
+  nav ul {
+    display: none;
+  }
+  nav img {
+    display: flex;
+  }
+}
+.main_form_Container {
+  margin: 3vw 5vw;
+  display: flex;
+  justify-content: space-evenly;
+}
+.title {
+  font-family: "Anton", sans-serif;
+  margin-left: 10vw;
+  color: #16324e;
+}
+
+@media (max-width: 920px) {
+  .main_Content h1 {
+    font-family: "Anton", sans-serif;
+    font-size: 5vw;
+  }
+}
+
+.module_Title {
+  font-family: "Anton", sans-serif;
+  color: #16324e;
+}
+.chatbox_panel {
+  margin: 0vw 10vw 0vw 10vw;
+  border-radius: 15px;
+}
+.user_Message {
+  text-align: right;
+  margin-right: 2vw;
+  background-color: #16324e;
+  color: whitesmoke;
+  padding: 5px;
+  border-radius: 10px;
+}
+.div_User_Message {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 50vw;
+}
+.company_Message {
+  text-align: left;
+  margin-left: 2vw;
+  background-color: #28282b;
+  color: whitesmoke;
+  padding: 5px;
+  border-radius: 10px;
+}
+.div_company_Message {
+  display: flex;
+  justify-content: flex-start;
+  margin-right: 50vw;
+}
+.chatBox {
+  max-height: 700px; /* Set the maximum height to control the scrollable area */
+  overflow-y: auto; /* Enable vertical scrolling when content exceeds the height */
+  box-shadow: #16324e 0px 30px 60px -12px inset,
+    #16324e 0px 18px 36px -18px inset;
+  border-top-left-radius: 5vw;
+}
+#myForm {
+  text-align: center;
+}
+#myForm input {
+  width: 80%;
+  padding: 10px;
+}
+#myForm button {
+  width: 9.6%;
+  padding: 10px;
+  background-color: #16324e;
+  color: whitesmoke;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: bold;
+}
+@media (max-width: 920px) {
+  #myForm {
+    text-align: center;
+  }
+  #myForm input {
+    width: 70%;
+    padding: 10px;
+  }
+  #myForm button {
+    width: 15vw;
+    padding: 10px;
+    background-color: #16324e;
+    color: whitesmoke;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: bold;
+  }
+}
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 15%;
+  width: 100%;
+  text-align: center;
+  margin-top: 0px;
+}
+.overlay-content li {
+  list-style: none;
+}
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+nav img {
+  display: none;
+  height: 7vw;
+  width: 7vw;
+}
+@media (max-width: 920px) {
+  .overlay a {
+    font-size: 40px;
+  }
+  .overlay .closebtn {
+    font-size: 50px;
+    top: 15px;
+    right: 35px;
+  }
+  nav img {
+    display: flex;
+  }
+}

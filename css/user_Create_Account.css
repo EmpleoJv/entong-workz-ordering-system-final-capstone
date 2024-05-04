@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&display=swap");
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image: url("../img/backgroundImages/opcMax.png");
+}
+.main_Container {
+  flex: 1;
+  margin: auto;
+  display: flex;
+  align-items: center; /* Center content vertically */
+}
+
+.signup_Container {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  text-align: center;
+  padding: 3vw 3vw;
+  border-radius: 1vw;
+  backdrop-filter: blur(10px); /* Apply a blur effect of 10px */
+}
+.container_Divider {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.signup_Container h3 {
+  text-align: center;
+  color: #16324e;
+  font-family: "Anton", sans-serif;
+  font-size: 2vw;
+}
+.title {
+  text-align: center;
+  color: #16324e;
+  font-family: "Anton", sans-serif;
+  font-size: 2vw;
+}
+.img_Input {
+  text-align: center;
+  padding: 1vw;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+label {
+  cursor: pointer;
+}
+.file_Main_Image {
+  font-size: 2vw;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: bold;
+}
+#imageName {
+  color: #16324e;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: bold;
+  font-size: 1.5vw;
+  white-space: nowrap; /* Prevent text from wrapping to the next line */
+  overflow: hidden; /* Hide any overflowing content */
+  text-overflow: ellipsis; /* Display an ellipsis (...) at the end of the text */
+  max-width: 10vw; /* Adjust the maximum width as needed */
+  display: inline-block;
+}
+.input_Type label {
+  font-weight: bold;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1.5vw;
+  letter-spacing: 1px;
+  color: #16324e;
+  display: none;
+}
+
+.input_Type input[type="text"],
+input[type="number"],
+input[type="password"],
+select,
+option {
+  padding: 0.5vw 0vw;
+  width: 15vw;
+  text-align: center;
+  margin: 0vw 1vw;
+  border-radius: 10px;
+  border: #16324e solid;
+  font-size: 1vw;
+}
+.start_Submit {
+  background-color: #16324e;
+  color: whitesmoke;
+  font-size: 2vw;
+  padding: 0.5vw 2vw;
+  border-radius: 10px;
+  font-family: "Anton", sans-serif;
+  letter-spacing: 2px;
+}
+footer {
+  background-color: #16324e;
+  color: #fff; /* Set your desired text color for the footer */
+  text-align: center;
+  padding: 10px 0;
+}
+.footLinkLocation {
+  vertical-align: middle;
+}
+.footLinkLocation ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+.footLinkLocation ul li a {
+  color: whitesmoke;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1vw;
+  font-weight: bold;
+}
+.footLinkLocation img {
+  width: 3vw;
+  height: 3vw;
+}
+@media (max-width: 920px) {
+  .container_Divider {
+    display: block;
+  }
+  .signup_Container {
+    margin: 10vw 0vw;
+    border-radius: 5vw;
+  }
+  .signup_Container h3 {
+    font-size: 10vw;
+  }
+  .title {
+    font-size: 5vw;
+  }
+  .input_Type input[type="text"],
+  input[type="number"],
+  input[type="password"],
+  select,
+  option {
+    padding: 0.5vw 0vw;
+    width: 80vw;
+    text-align: center;
+    margin: 0vw 1vw;
+    border-radius: 10px;
+    border: #16324e solid;
+    font-size: 5vw;
+  }
+  footer {
+    background-color: #16324e;
+    color: #fff; /* Set your desired text color for the footer */
+    text-align: center;
+    padding: 10px 0;
+    margin-left: -10vw;
+  }
+  .footLinkLocation {
+    vertical-align: middle;
+  }
+  .footLinkLocation ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .footLinkLocation ul li a {
+    color: whitesmoke;
+    text-decoration: none;
+    text-transform: none;
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 5vw;
+    font-weight: bold;
+  }
+  .footLinkLocation img {
+    width: 10vw;
+    height: auto;
+  }
+  .start_Submit {
+    background-color: #16324e;
+    color: whitesmoke;
+    font-size: 5vw;
+    padding: 0.5vw 6vw;
+    border-radius: 10px;
+  }
+}

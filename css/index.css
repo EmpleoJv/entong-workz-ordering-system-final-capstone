@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&display=swap");
+
+.main_Section {
+  display: flex;
+  justify-content: space-evenly;
+}
+.main_Title {
+  font-family: "Anton", sans-serif;
+  margin-top: 1vw;
+  display: block;
+}
+.main_Title img {
+  width: 30vw;
+  height: auto;
+  margin-top: 5vw;
+}
+/* .main_Title h1 {
+  font-size: 2.5vw;
+}
+.main_Title h2 {
+  font-size: 2.5vw;
+} */
+
+.main_Form {
+  padding: 2vw 5vw;
+  margin-top: 5vw;
+  border-radius: 2vw;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.main_Form h3 {
+  font-family: "Anton", sans-serif;
+  text-align: center;
+}
+.main_Form .user_Login_Form div {
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 0vw 2vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.main_Form .user_Login_Form div input {
+  padding: 0.5vw 2vw;
+  border: none;
+  outline: none;
+}
+.main_Form .user_Login_Form div input:focus {
+  outline: none;
+}
+.main_Form .user_Login_Form div img {
+  height: 1.5vw;
+  width: 1.5vw;
+  padding-top: 0.3vw;
+}
+.inputButton {
+  float: right;
+  background-color: #16324e;
+  color: whitesmoke;
+  font-family: "Anton", sans-serif;
+  padding: 0.5vw 1vw;
+  border-radius: 0.5vw;
+}
+.others_container {
+  display: flex;
+  justify-content: space-between;
+}
+.others_container button {
+  background-color: #16324e;
+  color: whitesmoke;
+  font-family: "Anton", sans-serif;
+  padding: 0.5vw 1vw;
+  border-radius: 0.5vw;
+}
+@media (max-width: 920px) {
+  .main_Section {
+    display: block;
+  }
+  .main_Title {
+    text-align: center;
+  }
+  .main_Title img {
+    width: 60vw;
+    height: auto;
+    margin-top: 5vw;
+  }
+  .main_Form {
+    padding: 2vw 5vw;
+    margin: 0vw 5vw;
+    margin-top: 1vw;
+  }
+  .main_Form .user_Login_Form div {
+    border-radius: 15px;
+  }
+  .main_Form .user_Login_Form div {
+    padding: 1.5vw 5vw;
+  }
+  .main_Form .user_Login_Form div img {
+    height: 5vw;
+    width: 5vw;
+  }
+  .inputButton {
+    border-radius: 1vw;
+  }
+  .others_container button {
+    border-radius: 1vw;
+  }
+}
+.view_Products {
+  color: whitesmoke;
+  background-color: #16324e;
+  padding: 1vw 2vw;
+  font-size: 1vw;
+  border-radius: 1vw;
+  font-family: "Anton", sans-serif;
+}
+.about {
+  background-color: #16324e;
+}
+.about_Container {
+  display: flex;
+  justify-content: center;
+  margin: 10vw 10vw 0vw 10vw;
+  padding: 8vw;
+}
+.about .about_Container .pContainer h1 {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: bold;
+  font-size: 2vw;
+  color: whitesmoke;
+  text-align: center;
+}
+/* .about .about_Container .pContainer h1 {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: bold;
+  color: whitesmoke;
+  font-size: 2vw;
+} */
+.about .about_Container .pContainer p {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: bold;
+  font-size: 1vw;
+  color: whitesmoke;
+  text-align: justify;
+}
+.about .about_Container .imgContainer img {
+  vertical-align: middle;
+  border: 5px solid whitesmoke;
+  text-shadow: 2px 2px black;
+  margin-left: 2vw;
+  height: 25vw;
+  width: 25vw;
+}
+@media (max-width: 920px) {
+  .view_Products {
+    color: whitesmoke;
+    background-color: #16324e;
+    padding: 1vw 2vw;
+    font-size: 4vw;
+    border-radius: 1vw;
+    font-family: "Anton", sans-serif;
+  }
+  .about_Container {
+    display: block;
+    text-align: center; /* Center-align the content */
+    margin: 5vw 5vw 0vw 5vw;
+    padding: 8vw;
+  }
+  .about .about_Container .pContainer h1 {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: bold;
+    font-size: 7vw;
+    color: whitesmoke;
+    text-align: center;
+  }
+  .about .about_Container .pContainer p {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: bold;
+    font-size: 4vw;
+    color: whitesmoke;
+    text-align: justify;
+  }
+  .about .about_Container .imgContainer img {
+    height: 70vw;
+    width: 70vw;
+    margin-left: 0vw;
+  }
+}

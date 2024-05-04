@@ -1,0 +1,375 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&display=swap");
+
+/* all about side nav */
+.sideNav {
+  background-color: #102336;
+  height: 100%;
+  width: 15vw;
+  position: fixed;
+  overflow-x: hidden;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+.sideNav h1 {
+  padding-top: 2vw;
+  color: whitesmoke;
+  font-family: "Anton", sans-serif;
+  text-align: center;
+  font-size: 2vw;
+}
+.sideNav a div img {
+  width: 2vw;
+}
+
+.sideNav a div span {
+  color: whitesmoke;
+  font-weight: bold;
+  font-size: 1vw;
+}
+.profile {
+  text-align: center;
+  padding-bottom: 1vw;
+}
+.profile a img {
+  width: 4vw;
+  border-radius: 50%;
+}
+.profile p {
+  color: whitesmoke;
+  font-weight: bold;
+  font-size: 1vw;
+}
+.sideNav a {
+  text-decoration: none;
+}
+.list div {
+  padding-left: 2.5vw;
+}
+.list div:hover {
+  background-color: #16324e;
+}
+@media (max-width: 920px) {
+  .sideNav a div img {
+    width: 9vw;
+  }
+  .sideNav a div span {
+    display: none;
+  }
+  .profile a img {
+    width: 12vw;
+  }
+  .profile p {
+    font-size: 3vw;
+  }
+  .sideNav h1 {
+    font-size: 4vw;
+  }
+}
+/* all bout main nav */
+.mainContent {
+  margin-left: 15vw;
+  background-color: #16324e;
+  transition: 0.5s;
+  height: 2vw;
+}
+.mainContent nav {
+  display: flex;
+  justify-content: space-between;
+}
+.mainContent nav img {
+  width: 2vw;
+  height: 2vw;
+}
+.mainContent nav h1 {
+  font-size: 1.7vw;
+  color: whitesmoke;
+  font-family: "Anton", sans-serif;
+}
+
+.mainContent nav .logout {
+  font-size: 1.2vw;
+  padding-right: 1vw;
+  color: whitesmoke;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: bold;
+}
+
+@media (max-width: 920px) {
+  .mainContent {
+    height: 7vw;
+  }
+
+  .mainContent nav img {
+    width: 7vw;
+    height: 7vw;
+  }
+  .mainContent nav h1 {
+    font-size: 6vw;
+  }
+
+  .mainContent nav .logout {
+    font-size: 4vw;
+    padding-right: 1vw;
+  }
+}
+
+.main_form_Container {
+  margin: 3vw 5vw;
+  display: flex;
+  justify-content: space-evenly;
+}
+.title {
+  font-family: "Anton", sans-serif;
+  margin-left: 8vw;
+  color: #16324e;
+}
+.action2 {
+  display: flex;
+  flex-wrap: wrap;
+}
+#searchBar,
+#sortButton,
+#sortButton2,
+#categorySelect,
+#brandSelect,
+#refreshButton {
+  width: 10vw;
+  height: 3vw;
+}
+
+#searchBar {
+  padding: 0.5vw;
+  border-radius: 1vw;
+  /* font-family: "Barlow Condensed", sans-serif; */
+  font-weight: bold;
+}
+#sortButton {
+  border-radius: 1vw;
+  color: whitesmoke;
+  background-color: #16324e;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: bold;
+}
+#sortButton2 {
+  border-radius: 1vw;
+  color: whitesmoke;
+  background-color: #16324e;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: bold;
+}
+#categorySelect {
+  padding: 0.5vw;
+  /* font-family: "Barlow Condensed", sans-serif; */
+  font-weight: bold;
+  border-radius: 1vw;
+}
+#brandSelect {
+  padding: 0.5vw;
+  /* font-family: "Barlow Condensed", sans-serif; */
+  font-weight: bold;
+  border-radius: 1vw;
+}
+#refreshButton {
+  padding: 0vw 1vw;
+  border-radius: 1vw;
+  color: whitesmoke;
+  background-color: #16324e;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: bold;
+}
+@media (max-width: 920px) {
+  .action2 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #searchBar,
+  #sortButton,
+  #sortButton2,
+  #categorySelect,
+  #brandSelect,
+  #refreshButton {
+    width: 34vw;
+    height: 7vw;
+    font-size: 3vw;
+  }
+}
+.grid-container {
+  margin: 0vw 3.5vw;
+  display: grid;
+  grid-template-areas:
+    "items items items items items list"
+    "items items items items items list"
+    "items items items items items list";
+  gap: 2vw;
+  padding: 10px;
+}
+.grid-container > div {
+  padding: 1vw;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 10px;
+}
+.item1 {
+  grid-area: items;
+}
+.item2 {
+  grid-area: list;
+  padding: 20px; /* Adjust padding as needed */
+  border: 1px solid #ccc; /* Adjust border as needed */
+  box-sizing: border-box;
+}
+@media (max-width: 920px) {
+  .grid-container {
+    margin: 0vw 3.5vw;
+    display: block;
+    grid-template-areas:
+      "items items items items items list"
+      "items items items items items list"
+      "items items items items items list";
+    gap: 2vw;
+    padding: 10px;
+  }
+}
+.card_Content {
+  display: flex;
+  flex-wrap: wrap;
+}
+.card {
+  width: 15vw;
+  height: 20vw;
+  padding: 1vw;
+  margin: 1vw;
+  border: 5px solid #16324e;
+  border-radius: 1vw;
+}
+.actions {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 920px) {
+  .card_Content {
+    display: block;
+    flex-wrap: wrap;
+  }
+  .card {
+    width: auto;
+    height: auto;
+    padding: 1vw;
+    margin: 1vw;
+    border: 5px solid #16324e;
+    border-radius: 1vw;
+  }
+}
+.card .image img {
+  width: 12.5vw;
+  height: 12.5vw;
+}
+.name {
+  font-size: 1vw;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.addButton {
+  background-color: #16324e;
+  color: whitesmoke;
+  padding: 0vw 2vw;
+  border-radius: 1vw;
+}
+@media (max-width: 920px) {
+  .card .image img {
+    width: 62.5vw;
+    height: 62.5vw;
+  }
+  .name {
+    font-size: 5vw;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .addButton {
+    background-color: #16324e;
+    color: whitesmoke;
+    padding: 0vw 2vw;
+    border-radius: 1vw;
+  }
+}
+.container h1 {
+  color: #16324e;
+  font-family: "Anton", sans-serif;
+}
+.clicked-image {
+  width: 100px;
+  height: auto;
+  margin-left: 10px;
+}
+#itemImagesContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+/* form the AI */
+#output {
+  font-family: "Anton", sans-serif;
+  font-size: 1.5vw;
+  color: #16324e;
+}
+#totalPrice {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1.5vw;
+  font-weight: bold;
+}
+#deductionPrice {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1.5vw;
+  font-weight: bold;
+}
+#prices {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1.5vw;
+  font-weight: bold;
+}
+.addToCart {
+  background-color: #16324e;
+  color: whitesmoke;
+  padding: 0vw 1vw;
+  border-radius: 1vw;
+}
+.finalMessage {
+  font-size: 1vw;
+  font-family: "Anton", sans-serif;
+  color: rgb(132, 29, 29);
+}
+
+@media (max-width: 920px) {
+  /* form the AI */
+  #output {
+    font-family: "Anton", sans-serif;
+    font-size: 5vw;
+    color: #16324e;
+  }
+  #totalPrice {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 5vw;
+    font-weight: bold;
+  }
+  #deductionPrice {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 5vw;
+    font-weight: bold;
+  }
+  #prices {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 5vw;
+    font-weight: bold;
+  }
+  .finalMessage {
+    font-size: 5vw;
+    text-align: center;
+    font-family: "Anton", sans-serif;
+    color: rgb(132, 29, 29);
+  }
+}

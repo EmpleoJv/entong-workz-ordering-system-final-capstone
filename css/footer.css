@@ -1,0 +1,77 @@
+/* footer {
+  background-color: #102336;
+  left: 0;
+  bottom: 0;
+  height: 4vw;
+  margin-top: -0.5vw;
+  width: 100%;
+} */
+
+/* Add the following CSS to your existing CSS file */
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main_Container {
+  flex: 1;
+}
+
+footer {
+  background-color: #102336;
+  color: #fff; /* Set your desired text color for the footer */
+  text-align: center;
+  padding: 10px 0;
+  margin-top: -0.5vw;
+}
+.footLinkLocation {
+  vertical-align: middle;
+}
+.footLinkLocation ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+.footLinkLocation ul li a {
+  color: whitesmoke;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1vw;
+  font-weight: bold;
+}
+.footLinkLocation img {
+  width: 3vw;
+  height: 3vw;
+}
+@media (max-width: 920px) {
+  footer {
+    background-color: #102336;
+    color: #fff; /* Set your desired text color for the footer */
+    text-align: center;
+    padding: 10px 0;
+    margin-top: -2vw;
+  }
+  .footLinkLocation {
+    vertical-align: middle;
+  }
+  .footLinkLocation ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: -10vw;
+  }
+  .footLinkLocation ul li a {
+    color: whitesmoke;
+    text-decoration: none;
+    text-transform: none;
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 3vw;
+    font-weight: bold;
+  }
+  .footLinkLocation img {
+    width: 10vw;
+    height: auto;
+  }
+}

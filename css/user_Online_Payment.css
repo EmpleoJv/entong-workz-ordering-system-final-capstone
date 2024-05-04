@@ -1,0 +1,333 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cairo&family=Kanit&family=Roboto&display=swap");
+.main_Container {
+  background-color: whitesmoke;
+  min-height: 100vh;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0vw 10vw;
+}
+nav h1 {
+  font-family: "Anton", sans-serif;
+  font-size: 2vw;
+  color: #16324e;
+}
+nav ul {
+  display: flex;
+}
+nav ul li {
+  list-style: none;
+  padding: 0.7vw;
+}
+nav ul li a {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: bold;
+  color: #16324e;
+  text-decoration: none;
+}
+nav ul li a:hover {
+  text-decoration: none;
+  color: #16324e;
+}
+@media (max-width: 920px) {
+  nav h1 {
+    font-family: "Anton", sans-serif;
+    font-size: 5vw;
+    padding-top: 1vw;
+  }
+  nav ul {
+    display: none;
+  }
+}
+.main_Content {
+  margin: 0vw 5vw;
+  padding: 2vw;
+  background-color: #16324e;
+  border-radius: 1vw;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.main_Content .title {
+  font-family: "Anton", sans-serif;
+  color: whitesmoke;
+}
+@media (max-width: 920px) {
+  .main_Content h1 {
+    font-family: "Anton", sans-serif;
+    font-size: 5vw;
+  }
+}
+nav img {
+  display: none;
+  height: 7vw;
+  width: 7vw;
+}
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 15%;
+  width: 100%;
+  text-align: center;
+  margin-top: 0px;
+}
+.overlay-content li {
+  list-style: none;
+}
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media (max-width: 920px) {
+  .overlay a {
+    font-size: 40px;
+  }
+  .overlay .closebtn {
+    font-size: 50px;
+    top: 15px;
+    right: 35px;
+  }
+  nav img {
+    display: flex;
+  }
+}
+.main_panel {
+  display: flex;
+  justify-content: space-evenly;
+}
+.img_Con {
+  text-align: center;
+  max-height: 35vw; /* Set a fixed height for the div */
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+.img_Con img {
+  /* border: #16324e dotted 2px; */
+  border-radius: 1vw;
+  box-shadow: rgba(255, 255, 255, 0.25) 0px 54px 55px,
+    rgba(200, 195, 195, 0.12) 0px -12px 30px,
+    rgba(219, 210, 210, 0.12) 0px 4px 6px,
+    rgba(210, 196, 196, 0.17) 0px 12px 13px,
+    rgba(249, 243, 243, 0.09) 0px -3px 5px;
+  height: 25vw;
+  width: auto;
+}
+.img_Con p {
+  font-family: "Roboto", sans-serif;
+  color: whitesmoke;
+  font-size: 2vw;
+  text-align: center;
+  text-shadow: 2px 2px black;
+}
+.form_Con {
+  text-align: center;
+  width: 30vw;
+}
+.form_Con form {
+  margin-top: 1vw;
+}
+.form_Con p {
+  font-family: "Roboto", sans-serif;
+  color: whitesmoke;
+  font-size: 2vw;
+  text-align: center;
+  text-shadow: 2px 2px black;
+}
+.form_Con form label {
+  font-family: "Roboto", sans-serif;
+  color: whitesmoke;
+  font-size: 2vw;
+  text-shadow: 2px 2px black;
+}
+.hr2 {
+  border: white 2px solid;
+}
+.hr {
+  display: none;
+  border: white 2px solid;
+}
+#imageName {
+  font-size: 1vw;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 20vw;
+  display: inline-block;
+}
+.form_Con #reference_Number {
+  font-size: 1vw;
+  font-family: "Roboto", sans-serif;
+  width: 80%;
+}
+.submit_Payment {
+  background-color: whitesmoke;
+  color: #16324e;
+  font-size: 1.5vw;
+  width: 20vw;
+  height: 3vw;
+  margin-bottom: 5vw;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  box-shadow: rgba(255, 255, 255, 0.25) 0px 54px 55px,
+    rgba(200, 195, 195, 0.12) 0px -12px 30px,
+    rgba(219, 210, 210, 0.12) 0px 4px 6px,
+    rgba(210, 196, 196, 0.17) 0px 12px 13px,
+    rgba(249, 243, 243, 0.09) 0px -3px 5px;
+}
+
+@media (max-width: 920px) {
+  .img_Con {
+    max-height: 140vw; /* Set a fixed height for the div */
+  }
+  hr {
+    display: flex;
+  }
+  .main_panel {
+    display: block;
+  }
+  .img_Con {
+    text-align: center;
+  }
+  .img_Con img {
+    border-radius: 1vw;
+    height: 100vw;
+    width: auto;
+  }
+  .img_Con p {
+    font-size: 5vw;
+  }
+  .form_Con {
+    text-align: center;
+    width: 100%;
+  }
+  .form_Con form {
+    margin-top: 5vw;
+  }
+  .form_Con p {
+    font-size: 5vw;
+    margin-top: 5vw;
+  }
+  .form_Con form label {
+    font-family: "Roboto", sans-serif;
+    color: whitesmoke;
+    font-size: 5vw;
+    text-shadow: 2px 2px black;
+  }
+  #imageName {
+    font-size: 5vw;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 60vw;
+    display: inline-block;
+  }
+  .form_Con #reference_Number {
+    font-size: 5vw;
+  }
+  .submit_Payment {
+    background-color: whitesmoke;
+    color: #16324e;
+    font-size: 5vw;
+    width: 50vw;
+    height: auto;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    box-shadow: rgba(255, 255, 255, 0.25) 0px 54px 55px,
+      rgba(200, 195, 195, 0.12) 0px -12px 30px,
+      rgba(219, 210, 210, 0.12) 0px 4px 6px,
+      rgba(210, 196, 196, 0.17) 0px 12px 13px,
+      rgba(249, 243, 243, 0.09) 0px -3px 5px;
+  }
+}
+
+.allOrder {
+  /* Set a max-width to limit the width of the page */
+  max-width: 100%;
+  max-height: 1500%;
+  overflow-x: auto; /* Add horizontal scrolling if needed */
+  margin: 2vw;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  background-color: #16324e;
+}
+.allOrdersTitle {
+  color: whitesmoke;
+  font-family: "Anton", sans-serif;
+  margin-left: 1vw;
+}
+#ordersTable {
+  width: 100%;
+  border-collapse: collapse;
+  /* background-color: lightgray; */
+  font-family: Arial, Helvetica, sans-serif;
+  white-space: nowrap;
+  border: 1px solid #16324e;
+}
+
+/* Style for the table header */
+#ordersTable thead th {
+  background-color: #16324e;
+  position: sticky; /* Make the header sticky */
+  top: 0; /* Stick to the top */
+  color: whitesmoke;
+}
+
+/* Style for table cells (optional) */
+#ordersTable td {
+  border: 1px solid gray;
+  padding: 8px;
+  text-align: center;
+}
+
+/* Style for table rows (optional) */
+.even-row {
+  background-color: white !important;
+}
+.even-row:nth-child(even) {
+  background-color: whitesmoke !important;
+}
+.even-row:hover {
+  background-color: lightgrey !important;
+}
+/* Style for the table image (optional) */
+.img {
+  border-radius: 1vw;
+  height: 20vw;
+  width: auto;
+}
+.price {
+  color: red;
+}
+

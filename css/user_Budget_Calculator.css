@@ -1,0 +1,343 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&display=swap");
+
+.main_Container {
+  background-color: whitesmoke;
+  min-height: 100vh;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0vw 10vw;
+}
+nav h1 {
+  font-family: "Anton", sans-serif;
+  font-size: 2vw;
+  color: #16324e;
+}
+nav ul {
+  display: flex;
+}
+nav ul li {
+  list-style: none;
+  padding: 0.7vw;
+}
+nav ul li a {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: bold;
+  color: black;
+}
+nav ul a li {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: bold;
+  color: black;
+}
+nav ul li a:hover {
+  text-decoration: none;
+}
+@media (max-width: 920px) {
+  nav h1 {
+    font-family: "Anton", sans-serif;
+    font-size: 5vw;
+  }
+  nav ul {
+    display: none;
+  }
+}
+.main_form_Container {
+  margin: 3vw 5vw;
+  display: flex;
+  justify-content: space-evenly;
+}
+.title {
+  font-family: "Anton", sans-serif;
+  margin-left: 8vw;
+  color: #16324e;
+}
+.grid-container {
+  margin: 0vw 5vw;
+  display: grid;
+  grid-template-areas:
+    "items items items items items list"
+    "items items items items items list"
+    "items items items items items list";
+  gap: 2vw;
+  padding: 10px;
+}
+.grid-container > div {
+  padding: 1vw;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 10px;
+}
+.item1 {
+  grid-area: items;
+}
+.item2 {
+  grid-area: list;
+  padding: 20px; /* Adjust padding as needed */
+  border: 1px solid #ccc; /* Adjust border as needed */
+  box-sizing: border-box;
+}
+@media (max-width: 920px) {
+  .grid-container {
+    display: block;
+  }
+}
+
+.card_Content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.card {
+  width: 18vw;
+  height: 23vw;
+  padding: 1vw;
+  margin: 1vw;
+  border: 5px solid #16324e;
+  border-radius: 1vw;
+}
+.card .image {
+  text-align: center;
+}
+.card .image img {
+  width: 15vw;
+  height: 15vw;
+}
+.actions {
+  display: flex;
+  justify-content: space-between;
+}
+.name {
+  font-size: 1vw;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.addButton {
+  background-color: #16324e;
+  color: whitesmoke;
+  padding: 0vw 2vw;
+  border-radius: 1vw;
+}
+@media (max-width: 920px) {
+  .card {
+    width: 100%;
+    height: 50%;
+    padding: 1vw;
+    margin: 1vw;
+    border: 5px solid #16324e;
+    border-radius: 1vw;
+  }
+  .card .image img {
+    width: 50vw;
+    height: 50vw;
+  }
+  .name {
+    font-size: 5vw;
+  }
+  #price {
+    font-size: 5vw;
+  }
+  .addButton {
+    background-color: #16324e;
+    color: whitesmoke;
+    padding: 0vw 2vw;
+    border-radius: 1vw;
+    width: 50%;
+    font-weight: bold;
+  }
+}
+.clicked-image {
+  width: 100px;
+  height: 100px;
+  margin-left: 10px;
+}
+#itemImagesContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+/* form the AI */
+#output {
+  font-family: "Anton", sans-serif;
+  font-size: 1.5vw;
+  color: #16324e;
+}
+#totalPrice {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1.5vw;
+  font-weight: bold;
+}
+#deductionPrice {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1.5vw;
+  font-weight: bold;
+  color: red;
+}
+#prices {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1.5vw;
+  font-weight: bold;
+}
+.addToCart {
+  background-color: #16324e;
+  color: whitesmoke;
+  padding: 0vw 1vw;
+  border-radius: 1vw;
+  font-weight: bold;
+
+  width: 100%;
+}
+@media (max-width: 920px) {
+  .clicked-image {
+    width: 50vw;
+    height: 50vw;
+    margin-left: 0px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #itemImagesContainer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  /* form the AI */
+  #output {
+    font-family: "Anton", sans-serif;
+    font-size: 5vw;
+    color: #16324e;
+  }
+  #totalPrice {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 7vw;
+    font-weight: bold;
+  }
+  #deductionPrice {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 7vw;
+    font-weight: bold;
+  }
+  #prices {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 7vw;
+    font-weight: bold;
+  }
+  .addToCart {
+    font-size: 5vw;
+    width: 100%;
+  }
+}
+nav img {
+  display: none;
+  height: 7vw;
+  width: 7vw;
+}
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 15%;
+  width: 100%;
+  text-align: center;
+  margin-top: 0px;
+}
+.overlay-content li {
+  list-style: none;
+}
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media (max-width: 920px) {
+  .overlay a {
+    font-size: 40px;
+  }
+  .overlay .closebtn {
+    font-size: 50px;
+    top: 15px;
+    right: 35px;
+  }
+  nav img {
+    display: flex;
+  }
+}
+.a {
+  text-decoration: none;
+}
+.a:hover {
+  text-decoration: none;
+}
+.Recommendation h1 {
+  text-align: center;
+}
+.Recommendation .second_Con {
+  margin: 0vw 2vw;
+  display: flex;
+  justify-content: space-evenly;
+}
+.card_con {
+  background-color: #16324e;
+  padding: 1vw;
+  width: 15vw;
+  height: 9vw;
+  /* border-radius: 10px; */
+  display: flex;
+}
+.image_con img {
+  background-color: whitesmoke;
+  width: 7vw;
+  height: 7vw;
+  border: black solid 2px;
+  border-radius: 10px;
+  margin-right: 0.5vw;
+}
+.info_con {
+  overflow: hidden;
+  width: 100%;
+}
+.info_con div {
+  display: block;
+  justify-content: space-between;
+}
+.info_con p {
+  color: whitesmoke;
+  text-decoration: none;
+  font-size: 1vw;
+}
+
+.info_con .info {
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Adjust the number of lines you want to display */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+}
